@@ -1,3 +1,4 @@
+.PHONY: both html pdf
 
 # make both talk=demo
 both: html pdf
