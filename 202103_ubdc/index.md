@@ -59,15 +59,126 @@
 #
 ## "The point"
 
-## Intro i
+## {data-transition="none"}
 
-## Intro ii
+How we arrange "stuff" in cities matters...
 
-## Intro iii
+<table>
+<col width="50%">
+<col width="50%">
+<tr>
+    <td>
+    <CENTER>
+<img src="../fig/misc/nyt_buildings_dc.png" style="width:100%;vertical-align:middle">
+    </CENTER>
+    </td>
+
+    <td>
+    <CENTER>
+<img src="../fig/misc/nyt_buildings_mesa.png" style="width:100%;vertical-align:middle">
+    </CENTER>
+    </td>
+</tr>
+</table>
+
+<span class='pie'>Source: *A map of every building in America* ([New York Times](https://www.nytimes.com/interactive/2018/10/12/us/map-of-every-building-in-the-united-states.html))</span>
+
+##
+
+... it matters *a lot*
+
+<table>
+<col width="33%" height="50%">
+<col width="33%" height="50%">
+<col width="33%" height="50%">
+<tr>
+    <td>
+    <CENTER>
+<img src="../fig/misc/joue_density.png" style="width:100%;vertical-align:middle">
+    </CENTER>
+    </td>
+
+    <td>
+    <CENTER>
+<img src="../fig/misc/cities_in_bad_shape.png" style="width:100%;vertical-align:middle">
+    </CENTER>
+    </td>
+
+    <td>
+    <CENTER>
+<img src="../fig/misc/est_emissions.png" style="width:100%;vertical-align:middle">
+    </CENTER>
+    </td>
+</tr>
+<tr class='fragment'>
+    <td>
+    <CENTER>
+<img src="../fig/misc/living_with_beauty.png" style="width:100%;vertical-align:middle">
+    </CENTER>
+    </td>
+
+    <td>
+    <CENTER>
+<img src="../fig/misc/oecd_rethinking_sprawl.png" style="width:100%;vertical-align:middle">
+    </CENTER>
+    </td>
+
+    <td>
+    <CENTER>
+<img src="../fig/misc/un_nua.png" style="width:100%;vertical-align:middle">
+    </CENTER>
+    </td>
+</tr>
+</table>
+
 
 ## Form
 
+<CENTER>
+*What does it look like?*
+</CENTER>
+
+<CENTER>
+<span class='fragment' style='color:#3b6e8c'>
+"Physical structure and appearance of cities"
+</span>
+</CENTER>
+
+<span class='fragment'>
+Qualitative, quant. case studies, morphometrics, remotely sensed
+</span>
+
 ## Function
+
+<CENTER>
+*What is it used for?*
+</CENTER>
+
+<CENTER>
+<span class='fragment' style='color:#3b6e8c'>
+"Activities that take place within an environment"
+</span>
+</CENTER>
+
+<span class='fragment'>
+Geography, Economics, Sociology, Environmental Sciences, Tansport studies...
+</span>
+
+## Form & Function
+
+- Richer picture
+- Topography, history, technology, cultural values...
+- More robust representations
+
+## Opportunities
+
+We don't have good ways of measuring form & function in cities
+
+- Detailed, consistent, scalable: "pick two"
+- Fragmented understanding
+- Land use/cover - <span class='hlg'>???</span> - Geodemographics
+
+
 
 #
 ## Spatial Signatures
