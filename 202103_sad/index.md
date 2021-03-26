@@ -142,7 +142,7 @@
     </span>
 </CENTER>
 
-## What do we talk about?
+## What do we talk about...
 
 <CENTER>
     <span class='fragment' style='color:#3b6e8c'>
@@ -187,7 +187,7 @@
     </tr>
 </table>
 
-## How can we describe it?
+## How can we describe it...
 
 <CENTER>
     <span class='fragment' style='color:#3b6e8c'>
@@ -199,7 +199,7 @@
 
 <CENTER>
     <span class='fragment' style='color:#3b6e8c'>
-        "quantitative science of urban form"
+        "quantitative analysis of urban form"
     </span>
 </CENTER>
 
@@ -268,7 +268,7 @@
 
 <CENTER>
     <span class='fragment'>
-        Because we finally can!
+        Because we (finally) can!
     </span>
 </CENTER>
 
@@ -623,11 +623,7 @@ We don't have good ways of measuring form & function in cities
             </CENTER>
         </td>
 
-        <td class="fragment fade-in-then-semi-out">
-            <CENTER>
-                <img src="../fig/sp_sig/signatures_no_labels.svg"
-                    style="width:80%;vertical-align:middle;box-shadow:none">
-            </CENTER>
+        <td>
         </td>
     </tr>
 
@@ -673,6 +669,56 @@ Every piece of information is considered within its spatial context
 <CENTER>
 <img src="../fig/sp_sig/tessellation_bcn_context.png" style="width:70%;vertical-align:middle;box-shadow:none">
 </CENTER>
+
+## {data-transition="none"}
+
+<table>
+    <col width="33%">
+    <col width="33%">
+    <col width="33%">
+    <tr>
+        <td>
+            <CENTER>
+                Enclosed Tessellation
+            </CENTER>
+        </td>
+        <td>
+            <CENTER>
+                Embedding *form* & *function*
+            </CENTER>
+        </td>
+        <td>
+            <CENTER>
+                Spatial Signatures
+            </CENTER>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="fade-in-then-semi-out">
+            <CENTER>
+                <img src="../fig/sp_sig/et_footprints_no_labels.svg"
+                    style="width:80%;vertical-align:middle;box-shadow:none">
+            </CENTER>
+        </td>
+
+        <td class="fade-in-then-semi-out">
+            <CENTER>
+                <img src="../fig/sp_sig/form_function_no_labels.svg"
+                    style="width:80%;vertical-align:middle;box-shadow:none">
+            </CENTER>
+        </td>
+
+        <td class="fade-in-then-semi-out">
+            <CENTER>
+                <img src="../fig/sp_sig/signatures_no_labels.svg"
+                    style="width:80%;vertical-align:middle;box-shadow:none">
+            </CENTER>
+        </td>
+    </tr>
+
+</table>
+
 
 ## Benefits
 
