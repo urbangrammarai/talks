@@ -844,7 +844,7 @@ data-background-size="contain"}
 #
 ## To take away
 
-1. Urban <span class="hlg">*form*</span> and <span class="hlg">*function*</span> matters
+1. Urban <span class="hlg">*form*</span> and <span class="hlg">*function*</span> matter
 1. <span class="hlg">Spatial Signatures</span>: F&F for cities, in detail, at scale
 1. Good <span class="hlg">measurement</span> $\rightarrow$ better <span class="hlg">understanding</span>
 
