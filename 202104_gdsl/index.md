@@ -510,13 +510,13 @@ Singapore
 #
 ## Roadmap
 <span class='fragment'>
-Spatial Signatures for the Great Britain
+Spatial Signatures for the Great Britain (spring 2021)
 </span>
 
-<span class='fragment'>AI model recognising signatures from satellite imagery
+<span class='fragment'>AI model recognising signatures from satellite imagery (end of 2021)
 </span>
 
-<span class='fragment'>Temporal classification based on satellite imagery
+<span class='fragment'>Temporal classification based on satellite imagery (2022)
 </span>
 
 
