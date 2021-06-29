@@ -441,7 +441,7 @@ Every piece of information is considered within its spatial context
 
         <td class="fade-in-then-semi-out">
             <CENTER>
-                <img src="../fig/isuf/cgram.png"
+                <img src="../fig/sp_sig/signatures_no_labels.svg"
                     style="width:80%;vertical-align:middle;box-shadow:none">
             </CENTER>
         </td>
