@@ -433,7 +433,7 @@ $N \approx 300$
 ## Context
 
 <CENTER>
-<img src="../fig/sp_sig/tessellation_bcn_context.png" style="width:70%;vertical-align:middle;box-shadow:none">
+<img src="../fig/sp_sig/tessellation_bcn_context.png" style="width:50%;vertical-align:middle;box-shadow:none">
 </CENTER>
 
 ## Data
@@ -456,12 +456,12 @@ $N \approx 300$
     <CENTER>
     <span class="hlg">*Function*</span>
     </CENTER>
-- Census
+- (Business) Census
 - OpenStreetMap
 - Geolytix
-- Business census
-- WorldPop
-- CORINE
+- Listed buildings
+- CDRC
+- CORINE / Sentinel 2
 - VIIRS
     </td>
 <tr>
@@ -472,27 +472,53 @@ $N \approx 300$
 
 ## {data-transition="none" data-background-image="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Parental_Advisory_label.svg/1200px-Parental_Advisory_label.svg.png" data-background-size="contain"}
 
-## British Signatures
+##
 
-[Talk about the classes broadly]
+<table>
+<col width="60%">
+<col width="40%">
+<tr>
+    <td  style="vertical-align:middle;box-shadow:none">
+BRITISH SIGNATURES
 
-## {data-transition="none" data-background-image="../fig/gb/signatures_gb.png" data-background-size="contain"}
+<u>**Countryside**</u>
+
+- <img src="../fig/gb/colors_rural.png"  style="height:50px;vertical-align:middle;box-shadow:none">
+
+<u>**Urban Areas**</u>
+
+- Periphery <img src="../fig/gb/colors_urban_periphery.png"  style="height:50px;vertical-align:middle;box-shadow:none">
+- Suburbs <img src="../fig/gb/colors_urban_suburbs.png"  style="height:50px;vertical-align:middle;box-shadow:none">
+- Cities <img src="../fig/gb/colors_urban_cities.png"  style="height:50px;vertical-align:middle;box-shadow:none">
+
+</td>
+<td style="vertical-align:middle;box-shadow:none">
+<img src="../fig/gb/signatures_gb.png"  style="height:100%;vertical-align:middle;box-shadow:none">
+    </td>
+<tr>
+</table>
 
 ## {data-transition="none" data-background-image="../fig/gb/signatures_scottish_belt.png" data-background-size="cover"}
+## {data-transition="none" data-background-image="../fig/gb/signatures_scottish_belt_rural.png" data-background-size="cover"}
+## {data-transition="none" data-background-image="../fig/gb/signatures_scottish_belt_urban.png" data-background-size="cover"}
 
-## {data-transition="none" data-background-image="../fig/gb/signatures_lpool.png" data-background-size="cover"}
+## Hierarchy of *Urbanity*
 
-## *Urbanity* Hierarchy
+## {data-transition="none" data-background-image="../fig/gb/urb_tier_1.png" data-background-size="cover"}
+## {data-transition="none" data-background-image="../fig/gb/urb_tier_2.png" data-background-size="cover"}
+## {data-transition="none" data-background-image="../fig/gb/urb_tier_3.png" data-background-size="cover"}
+## {data-transition="none" data-background-image="../fig/gb/urb_tier_4.png" data-background-size="cover"}
 
+<!--
 <table>
 <col width="25%">
 <col width="75%">
 <tr>
 <td>
-    1
+    1, 2
 </td>
 <td>
-<img src="../fig/gb/urban_atlas_london.png"  style="width:200px;vertical-align:middle;box-shadow:none">
+<img src="../fig/gb/urb_tier_1.png"  style="width:150px;vertical-align:middle;box-shadow:none">
     </td>
 </tr><tr class='fragment'>
 <td>
@@ -514,7 +540,7 @@ $N \approx 300$
 </tr>
 <tr>
 </table>
-
+-->
 
 ## Spatial Signatures <span class='fragment' data-fragment-index='1'>Vs Land Use</span>
 
@@ -524,12 +550,12 @@ $N \approx 300$
 <tr>
     <td>
     <CENTER>
-<img src="../fig/gb/signatures_london.png" style="vertical-align:middle">
+<img src="../fig/gb/signatures_nw.png" style="vertical-align:middle">
     </CENTER>
 </td>
 <td class='fragment' data-fragment-index='1'>
     <CENTER>
-<img src="../fig/gb/urban_atlas_london.png" style="vertical-align:middle">
+<img src="../fig/gb/urban_atlas_nw.png" style="vertical-align:middle">
     </CENTER>
     </td>
 <tr>
