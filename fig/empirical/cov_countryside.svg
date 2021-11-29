@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 501 337" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
+    <g transform="matrix(1,0,0,1,-640,0)">
+        <g id="Artboard2" transform="matrix(0.979806,0,0,1,12.3968,0)">
+            <rect x="640.539" y="0" width="511.25" height="336.145" style="fill:none;"/>
+            <g transform="matrix(1.02061,0,0,1,684.867,-173.12)">
+                <path d="M351.864,350.682C351.864,321.646 342.171,293.425 324.33,270.518C306.489,247.61 281.501,231.301 253.349,224.19C225.197,217.08 195.462,219.567 168.883,231.255C142.303,242.943 120.372,263.177 106.584,288.73L221.4,350.682L351.864,350.682Z" style="fill:rgb(215,222,209);fill-rule:nonzero;"/>
+            </g>
+            <g transform="matrix(1.02061,0,0,1,684.867,29.7013)">
+                <path d="M106.584,85.908C92.404,112.188 87.667,142.556 93.171,171.906C98.675,201.256 114.092,227.845 136.83,247.202C159.568,266.559 188.277,277.535 218.129,278.284C247.981,279.032 277.204,269.51 300.884,251.317L221.4,147.861L106.584,85.908Z" style="fill:rgb(242,230,199);fill-rule:nonzero;"/>
+            </g>
+            <g transform="matrix(0.915493,0.44202,0.45113,-0.897005,640.401,250.914)">
+                <path d="M322.281,125.251C331.12,143.189 335.718,162.921 335.718,182.918C335.718,202.916 331.12,222.648 322.281,240.586L205.254,182.918L322.281,125.251Z" style="fill:rgb(194,208,217);fill-rule:nonzero;"/>
+            </g>
+            <g transform="matrix(1.02061,0,0,1,684.867,-39.5182)">
+                <path d="M221.4,308.405C245.62,308.405 268.851,298.782 285.976,281.656C303.102,264.531 312.725,241.3 312.725,217.08C312.725,192.86 303.102,169.629 285.976,152.504C268.851,135.378 245.62,125.755 221.4,125.755C197.18,125.755 173.949,135.378 156.824,152.504C139.698,169.629 130.075,192.86 130.075,217.08C130.075,241.3 139.698,264.531 156.824,281.656C173.949,298.782 197.18,308.405 221.4,308.405Z" style="fill:white;fill-rule:nonzero;stroke:white;stroke-width:1px;"/>
+            </g>
+            <g transform="matrix(1.02061,0,0,1,684.867,-37.3582)">
+                <text x="256.544px" y="81.631px" style="font-family:'ETBembo-RomanLF', 'ETBembo';font-size:15px;">W<tspan x="273.104px 277.359px 281.555px 289.516px 293.456px 300.055px 307.745px 316.021px 324.026px 329.079px 334.594px 342.181px 347.161px 351.416px 359.377px " y="81.631px 81.631px 81.631px 81.631px 81.631px 81.631px 81.631px 81.631px 81.631px 81.631px 81.631px 81.631px 81.631px 81.631px 81.631px ">ild countryside</tspan></text>
+            </g>
+            <g transform="matrix(1.02061,0,0,1,650.702,-37.3582)">
+                <text x="10.67px" y="330.047px" style="font-family:'ETBembo-RomanLF', 'ETBembo';font-size:15px;">C<tspan x="22.308px 29.941px 38.159px 46.106px 51.102px 56.559px 64.089px 69.011px 73.208px 81.112px 87.682px 92.146px 98.562px 106.019px 111.476px 115.673px 122.214px 130.432px 134.571px 139.567px 147.785px 153.242px " y="330.047px 330.047px 330.047px 330.047px 330.047px 330.047px 330.047px 330.047px 330.047px 330.047px 330.047px 330.047px 330.047px 330.047px 330.047px 330.047px 330.047px 330.047px 330.047px 330.047px 330.047px 330.047px ">ountryside agriculture</tspan></text>
+            </g>
+            <g transform="matrix(1.02061,0,0,1,684.867,-37.3582)">
+                <text x="350.13px" y="284.206px" style="font-family:'ETBembo-RomanLF', 'ETBembo';font-size:15px;">U<tspan x="362.603px 368.097px 375.707px 382.16px 390.143px 394.062px 401.672px 409.927px 414.988px 420.05px 426.656px " y="284.206px 284.206px 284.206px 284.206px 284.206px 284.206px 284.206px 284.206px 284.206px 284.206px 284.206px ">rban buffer</tspan></text>
+            </g>
+        </g>
+    </g>
+</svg>
