@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Developing an AI-based Urban Grammar</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Urban Grammar AI Team">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../revealjs/dist/reset.css">
+		<link rel="stylesheet" href="../revealjs/dist/reveal.css">
+		<link rel="stylesheet" href="../revealjs/dist/theme/ugai.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+
+	<body>
+
+        <!-- BODY -->
+		<div class="reveal">
+			<div class="slides">
+
+                <section id="section" class="slide level1">
+                <h1></h1>
+                <CENTER>
+                <img src="../fig/misc/turing_dab.png" style="width:100%;vertical-align:middle;box-shadow:none">
+                </CENTER>
+                </section>
+                <section id="section-1" class="slide level1">
+                <h1></h1>
+                <CENTER>
+                <img src="../fig/misc/urban_grammar_project.png" style="width:100%;vertical-align:middle;box-shadow:none">
+                </CENTER>
+                </section>
+                <section id="goals" class="slide level1">
+                <h1>Goals</h1>
+                <ol type="1">
+                <li><span class="fragment" data-fragment-index="0">Develop <span style="color:#94666e">Spatial Signatures</span></span></li>
+                </ol>
+                <CENTER class="fragment" data-fragment-index="0" style="color:#94666e">
+                <em>A characterisation of space based on form and function designed to understand urban environments</em>
+                </CENTER>
+                <ol start="2" type="1">
+                <li><span class="fragment">Learn SS from satellite imagery through AI</span></li>
+                </ol>
+                </section>
+                <section id="spatial-signatures" class="slide level1">
+                <h1>Spatial Signatures</h1>
+                <table>
+                <col width="30%">
+                <col width="70%">
+                <tr>
+                <td style="vertical-align:middle;box-shadow:none">
+                <img src="../fig/gb/signatures_gb.png"  style="height:100%;vertical-align:middle;box-shadow:none">
+                </td>
+                <td class="fragment" style="vertical-align:middle;box-shadow:none">
+                <img src="../fig/sp_sig/ss_exeter.png"  style="height:100%;vertical-align:middle;box-shadow:none">
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="what-for" class="slide level1">
+                <h1>What for?</h1>
+                <ul>
+                <li>Understanding (change in) <span class="hlg">cities</span> in <span class="hlg">detail</span> <em>and</em> at <span class="hlg">scale</span></li>
+                <li><span class="hlg">Building block</span> (urban form &amp; function <em>made easy</em>)
+                <ul>
+                <li>Sustainability</li>
+                <li>Productivity</li>
+                <li>Inequalities</li>
+                <li>…</li>
+                </ul></li>
+                </ul>
+                </section>
+
+			</div>
+		</div>
+
+        <!-- DEPENDENCIES -->
+		<script src="../revealjs/dist/reveal.js"></script>
+		<script src="../revealjs/plugin/zoom/zoom.js"></script>
+		<script src="../revealjs/plugin/notes/notes.js"></script>
+		<script src="../revealjs/plugin/search/search.js"></script>
+		<script src="../revealjs/plugin/markdown/markdown.js"></script>
+		<script src="../revealjs/plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				controlsTutorial: false,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>

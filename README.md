@@ -9,3 +9,4 @@ Archive of public talks for the [Urban Grammar](https://urbangrammarai.github.io
 - [November'21 - Turing Townhall](202111_ati/index.html) [`[PDF]`](202111_ati/index.pdf)
 - [November'21 - CASA Seminars](202111_casa/index.html) [`[PDF]`](202111_casa/index.pdf)
 - [November'21 - Turing 2.0 (Leeds)](202111_ati_leeds/index.html) [`[PDF]`](202111_ati_leeds/index.pdf)
+- [December'21 - Turing/Met Office](202112_mo/index.html) [`[PDF]`](202112_mo/index.pdf)
