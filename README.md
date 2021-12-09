@@ -7,4 +7,5 @@ Archive of public talks for the [Urban Grammar](https://urbangrammarai.github.io
 - [June'21 - ISUF conference](202106_isuf/index.html) [`[PDF]`](202106_isuf/index.pdf) [`YouTube`](https://www.youtube.com/watch?v=8d4e1uVMg3g)
 - [June'21 - Turing Urban Analytics](202106_ati/index.html) [`[PDF]`](202106_ati/index.pdf) [`YouTube`](https://youtu.be/fHccCnUF9yc)
 - [November'21 - Turing Townhall](202111_ati/index.html) [`[PDF]`](202111_ati/index.pdf)
+- [November'21 - CASA Seminars](202111_casa/index.html) [`[PDF]`](202111_casa/index.pdf)
 - [November'21 - Turing 2.0 (Leeds)](202111_ati_leeds/index.html) [`[PDF]`](202111_ati_leeds/index.pdf)
