@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Developing an AI-based Urban Grammar</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Urban Grammar AI Team">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../revealjs/dist/reset.css">
+		<link rel="stylesheet" href="../revealjs/dist/reveal.css">
+		<link rel="stylesheet" href="../revealjs/dist/theme/ugai.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+
+	<body>
+
+        <!-- BODY -->
+		<div class="reveal">
+			<div class="slides">
+
+                <section id="section" class="slide level1">
+                <h1></h1>
+                <CENTER>
+                <h4>
+                <em>Using deep learning to identify (urban) form and function in satellite imagery - the case of Great Britain</em>
+                </h4>
+                </CENTER>
+                <br>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <a href="https://martinfleischmann.net/"><b>Martin Fleischmann</b></a>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <a href="https://darribas.org"><b>Dani Arribas-Bel</b></a>
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                <table>
+                <col width="33%">
+                <col width="33%">
+                <col width="33%">
+                <tr>
+                <td>
+                <img src="../fig/pr/logo_liv.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_ati.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_gdsl.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="section-1" class="slide level1">
+                <h1></h1>
+                <section id="section-2" class="level2" data-transition="none">
+                <h2 data-transition="none"></h2>
+                <p>How we arrange “stuff” in cities matters…</p>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/nyt_buildings_dc.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/nyt_buildings_mesa.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                <p><span class="pie">Source: <em>A map of every building in America</em> (<a href="https://www.nytimes.com/interactive/2018/10/12/us/map-of-every-building-in-the-united-states.html">New York Times</a>)</span></p>
+                </section>
+                <section id="section-3" class="level2">
+                <h2></h2>
+                <p>… it matters <em>a lot</em></p>
+                <table>
+                <col width="33%" height="50%">
+                <col width="33%" height="50%">
+                <col width="33%" height="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/joue_density.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/cities_in_bad_shape.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/est_emissions.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/living_with_beauty.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/oecd_rethinking_sprawl.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/un_nua.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                </section>
+                </section>
+                <section id="section-4" class="slide level1">
+                <h1></h1>
+                <section id="spatial-signatures" class="level2">
+                <h2>Spatial Signatures</h2>
+                </section>
+                <section id="section-5" class="level2" data-transition="none">
+                <h2 data-transition="none"></h2>
+                <CENTER>
+                <em>A characterisation of space based on form and function designed to understand urban environments</em>
+                </CENTER>
+                </section>
+                <section id="section-6" class="level2" data-transition="none">
+                <h2 data-transition="none"></h2>
+                <CENTER>
+                <em>A <span class="hlg">characterisation of space</span> based on form and function designed to understand urban environments</em>
+                </CENTER>
+                </section>
+                <section id="section-7" class="level2" data-transition="none">
+                <h2 data-transition="none"></h2>
+                <CENTER>
+                <em>A characterisation of space based on <span class="hlg">form and function</span> designed to understand urban environments</em>
+                </CENTER>
+                </section>
+                <section id="section-8" class="level2" data-transition="none">
+                <h2 data-transition="none"></h2>
+                <CENTER>
+                <em>A characterisation of space based on form and function designed to understand <span class="hlg">urban environments</span></em>
+                </CENTER>
+                </section>
+                <section id="section-9" class="level2" data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt.png" data-background-size="cover">
+                <h2 data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt.png" data-background-size="cover"></h2>
+                </section>
+                <section id="section-10" class="level2" data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_countryside.png" data-background-size="cover">
+                <h2 data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_countryside.png" data-background-size="cover"></h2>
+                </section>
+                <section id="section-11" class="level2" data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_periphery.png" data-background-size="cover">
+                <h2 data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_periphery.png" data-background-size="cover"></h2>
+                </section>
+                <section id="section-12" class="level2" data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_urban.png" data-background-size="cover">
+                <h2 data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_urban.png" data-background-size="cover"></h2>
+                </section>
+                </section>
+                <section id="section-13" class="slide level1">
+                <h1></h1>
+                <section id="the-issue" class="level2">
+                <h2>The issue</h2>
+                </section>
+                <section id="data" class="level2">
+                <h2>Data</h2>
+                <table>
+                <col width="45%">
+                <col width="10%">
+                <col width="45%">
+                <tr>
+                <td>
+                <CENTER>
+                <span class="hlg"><em>Form</em></span>
+                </CENTER>
+                <ul>
+                <li>OS OpenMap</li>
+                <li>OS OpenRoads</li>
+                </ul>
+                </td>
+                <td>
+                </td>
+                <td>
+                <CENTER>
+                <span class="hlg"><em>Function</em></span>
+                </CENTER>
+                <ul>
+                <li>(Business) Census</li>
+                <li>OpenStreetMap</li>
+                <li>Geolytix</li>
+                <li>Listed buildings</li>
+                <li>CDRC</li>
+                <li>CORINE / Sentinel 2</li>
+                <li>VIIRS
+                </td>
+                <tr>
+                </table></li>
+                </ul>
+                </section>
+                </section>
+                <section id="section-14" class="slide level1">
+                <h1></h1>
+                <section id="possible-solution" class="level2">
+                <h2>Possible solution?</h2>
+                </section>
+                <section id="sentinel-2" class="level2">
+                <h2>Sentinel 2</h2>
+                <p>S2 image here</p>
+                </section>
+                <section id="what-can-we-do" class="level2">
+                <h2>What can we do?</h2>
+                <ul>
+                <li>train an algorithm</li>
+                <li>incorporating the role of scale a geographic context</li>
+                </ul>
+                </section>
+                </section>
+                <section id="section-15" class="slide level1">
+                <h1></h1>
+                <section id="exploration" class="level2">
+                <h2>Exploration</h2>
+                </section>
+                <section id="neural-network-architecture" class="level2">
+                <h2>Neural network architecture</h2>
+                <ul>
+                <li>final figure (styled)</li>
+                </ul>
+                </section>
+                <section id="chip-size-effect" class="level2">
+                <h2>Chip size effect</h2>
+                <ul>
+                <li>illustrative figures on real data</li>
+                <li>figure comparing the results</li>
+                </ul>
+                </section>
+                <section id="image-classification" class="level2">
+                <h2>Image classification</h2>
+                <ul>
+                <li>accuracy and confusion matrix</li>
+                <li>a few maps on NW</li>
+                </ul>
+                </section>
+                <section id="co-location" class="level2">
+                <h2>Co-location</h2>
+                <ul>
+                <li>let’s incorporate some context</li>
+                </ul>
+                </section>
+                <section id="multi-output-regression" class="level2">
+                <h2>Multi-output regression</h2>
+                <ul>
+                <li>figure of chips</li>
+                <li>accuracy and confusion matrix</li>
+                <li>a few maps on NW (to be compared to previous)</li>
+                </ul>
+                </section>
+                <section id="spatial-lag" class="level2">
+                <h2>Spatial lag</h2>
+                <ul>
+                <li>accuracy and confusion matrix</li>
+                <li>a few maps on NW (to be compared to previous)</li>
+                </ul>
+                </section>
+                </section>
+                <section id="section-16" class="slide level1">
+                <h1></h1>
+                <section id="a-way-forward" class="level2">
+                <h2>A way forward</h2>
+                <p>Slide with all the accuracies and empty cells for: - more co-location - additional methods of understanding the context - segmentation - parallel NN model with additional data inputs</p>
+                </section>
+                </section>
+                <section id="section-17" class="slide level1">
+                <h1></h1>
+                <section id="conclusions" class="level2">
+                <h2>Conclusions</h2>
+                <p>When geography plays a role, AI needs to understand it.</p>
+                </section>
+                </section>
+                <section id="section-18" class="slide level1">
+                <h1></h1>
+                <CENTER>
+                <em>Using deep learning to identify (urban) form and function in satellite imagery - the case of Great Britain</em>
+                </CENTER>
+                <br>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <a href="https://martinfleischmann.net/"><b>Martin Fleischmann</b></a>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <a href="https://darribas.org"><b>Dani Arribas-Bel</b></a>
+                </CENTER>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <CENTER>
+                <SMALL> <a href="https://twitter.com/martinfleis">[<code>@martinfleis</code>]</b></a> </SMALL>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <SMALL> <a href="https://twitter.com/darribas">[<code>@darribas</code>]</b></a> </SMALL>
+                </CENTER>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <CENTER>
+                <SMALL> m.fleischmann@liverpool.ac.uk </SMALL>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <SMALL> d.arribas-bel@liverpool.ac.uk </SMALL>
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                <table>
+                <col width="33%">
+                <col width="33%">
+                <col width="33%">
+                <tr>
+                <td>
+                <img src="../fig/pr/logo_liv.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_ati.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_gdsl.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                </tr>
+                </table>
+                </section>
+
+			</div>
+		</div>
+
+        <!-- DEPENDENCIES -->
+		<script src="../revealjs/dist/reveal.js"></script>
+		<script src="../revealjs/plugin/zoom/zoom.js"></script>
+		<script src="../revealjs/plugin/notes/notes.js"></script>
+		<script src="../revealjs/plugin/search/search.js"></script>
+		<script src="../revealjs/plugin/markdown/markdown.js"></script>
+		<script src="../revealjs/plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				controlsTutorial: false,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
