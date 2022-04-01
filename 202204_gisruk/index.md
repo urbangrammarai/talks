@@ -195,12 +195,15 @@ How we arrange "stuff" in cities matters...
 
 ## Sentinel 2
 
-S2 image here
+<CENTER>
+<img src="../fig/gisruk/s2.png"  style="vertical-align:middle;box-shadow:none">
+</CENTER>
 
-## What can we do?
+## What we want to do?
 
-- train an algorithm
-- incorporating the role of scale a geographic context
+<!-- What are we trying to do conceptually -->
+<!-- - train an algorithm
+- incorporating the role of scale a geographic context -->
 
 #
 
