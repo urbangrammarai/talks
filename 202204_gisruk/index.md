@@ -193,6 +193,8 @@ How we arrange "stuff" in cities matters...
 
 ## Possible solution?
 
+## image of Planet data
+
 ## Sentinel 2
 
 <CENTER>
@@ -201,9 +203,13 @@ How we arrange "stuff" in cities matters...
 
 ## What we want to do?
 
-<!-- What are we trying to do conceptually -->
-<!-- - train an algorithm
-- incorporating the role of scale a geographic context -->
+<CENTER class='fragment'>
+understand the role of geography
+</CENTER>
+
+<CENTER class='fragment'>
+train a neural network
+</CENTER>
 
 #
 
@@ -211,48 +217,71 @@ How we arrange "stuff" in cities matters...
 
 ## Neural network architecture
 
-- final figure (styled)
+<CENTER>
+<img src="../fig/gisruk/comp1.pdf"  style="vertical-align:middle;box-shadow:none">
+</CENTER>
 
 ## Chip size effect
 
-- illustrative figures on real data
-- figure comparing the results
+## {data-transition="none"}
+
+<CENTER>
+<img src="../fig/gisruk/chips_160.png"  style="vertical-align:middle;box-shadow:none;width:80%">
+</CENTER>
+
+## {data-transition="none"}
+
+<CENTER>
+<img src="../fig/gisruk/chips_320.png"  style="vertical-align:middle;box-shadow:none;width:80%">
+</CENTER>
+
+## {data-transition="none"}
+
+<CENTER>
+<img src="../fig/gisruk/chips_640.png"  style="vertical-align:middle;box-shadow:none;width:80%">
+</CENTER>
+
+##
+
+<CENTER>
+<img src="../fig/gisruk/comp2.pdf"  style="vertical-align:middle;box-shadow:none">
+</CENTER>
 
 ## Image classification
 
-- accuracy and confusion matrix
-- a few maps on NW
+<!-- - accuracy and confusion matrix
+- a few maps on NW -->
 
 ## Co-location
 
-- let's incorporate some context
+<!-- - let's incorporate some context -->
 
 ## Multi-output regression
 
-- figure of chips
+<!-- - figure of chips
 - accuracy and confusion matrix
-- a few maps on NW (to be compared to previous)
+- a few maps on NW (to be compared to previous) -->
 
-## Spatial lag
+## Probability modelling
 
-- accuracy and confusion matrix
-- a few maps on NW (to be compared to previous)
+<!-- - accuracy and confusion matrix
+- a few maps on NW (to be compared to previous) -->
 
 #
 
 ## A way forward
 
-Slide with all the accuracies and empty cells for:
+<!-- Slide with all the accuracies and empty cells for:
     - more co-location
         - additional methods of understanding the context
     - segmentation
-    - parallel NN model with additional data inputs
+    - parallel NN model with additional data inputs -->
 
 #
 
 ## Conclusions
 
-When geography plays a role, AI needs to understand it.
+<!-- When geography plays a role, AI needs to understand it. -->
 
 #
 
