@@ -193,7 +193,11 @@ How we arrange "stuff" in cities matters...
 
 ## Possible solution?
 
-## image of Planet data
+##
+
+<CENTER>
+<img src="../fig/gisruk/hires.png"  style="vertical-align:middle;box-shadow:none;width:70%">
+</CENTER>
 
 ## Sentinel 2
 
