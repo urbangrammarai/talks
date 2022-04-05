@@ -201,11 +201,11 @@ How we arrange "stuff" in cities matters...
 
 ## Possible solution?
 
-##
+## {data-transition="none" data-background-image="../fig/gisruk/hires.png" data-background-size="cover"}
 
-<CENTER>
+<!-- <CENTER>
 <img src="../fig/gisruk/hires.png"  style="vertical-align:middle;box-shadow:none;width:70%">
-</CENTER>
+</CENTER> -->
 
 ## Sentinel 2
 
@@ -213,14 +213,14 @@ How we arrange "stuff" in cities matters...
 <img src="../fig/gisruk/s2.png"  style="vertical-align:middle;box-shadow:none">
 </CENTER>
 
-## What we want to do?
-
-<CENTER class='fragment'>
-understand the role of geography
-</CENTER>
+## What do we want to do?
 
 <CENTER class='fragment'>
 train a neural network
+</CENTER>
+
+<CENTER class='fragment'>
+understand the role of geography
 </CENTER>
 
 #
@@ -311,22 +311,31 @@ train a neural network
 
 ## A way forward
 
-<CENTER class="fragment">
-deploy probability modelling on GB
-</CENTER>
-<CENTER class="fragment">
-image segmentation
-</CENTER>
-<CENTER class="fragment">
-alternative NN architecture including additional context in a single model
-</CENTER>
+<div class="fragment">
+1. deploy probability modelling on GB
+</div>
+<div class="fragment">
+2. image segmentation
+</div>
+<div class="fragment">
+3. alternative NN architecture including additional context in a single model
+</div>
+
 #
 
 ## Conclusions
 
-<CENTER>
-When geography plays a role, AI needs to understand it.
-</CENTER>
+<div class="fragment">
+1. Relationship between signatures and satellite data is <span class="hlg">fuzzy<span>
+</div>
+
+<div class="fragment">
+2. Chip size needs to <span class="hlg">balance</span> information and relation to input geometry
+</div>
+
+<div class="fragment">
+3. <span class="hlg">Co-location</span> information needs to be embedded in the model
+</div>
 
 #
 

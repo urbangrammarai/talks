@@ -228,11 +228,11 @@
                 <section id="possible-solution" class="level2">
                 <h2>Possible solution?</h2>
                 </section>
-                <section id="section-15" class="level2">
-                <h2></h2>
-                <CENTER>
+                <section id="section-15" class="level2" data-transition="none" data-background-image="../fig/gisruk/hires.png" data-background-size="cover">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/hires.png" data-background-size="cover"></h2>
+                <!-- <CENTER>
                 <img src="../fig/gisruk/hires.png"  style="vertical-align:middle;box-shadow:none;width:70%">
-                </CENTER>
+                </CENTER> -->
                 </section>
                 <section id="sentinel-2" class="level2">
                 <h2>Sentinel 2</h2>
@@ -240,13 +240,13 @@
                 <img src="../fig/gisruk/s2.png"  style="vertical-align:middle;box-shadow:none">
                 </CENTER>
                 </section>
-                <section id="what-we-want-to-do" class="level2">
-                <h2>What we want to do?</h2>
-                <CENTER class="fragment">
-                understand the role of geography
-                </CENTER>
+                <section id="what-do-we-want-to-do" class="level2">
+                <h2>What do we want to do?</h2>
                 <CENTER class="fragment">
                 train a neural network
+                </CENTER>
+                <CENTER class="fragment">
+                understand the role of geography
                 </CENTER>
                 </section>
                 </section>
@@ -344,24 +344,42 @@
                 <h1></h1>
                 <section id="a-way-forward" class="level2">
                 <h2>A way forward</h2>
-                <CENTER class="fragment">
-                deploy probability modelling on GB
-                </CENTER>
-                <CENTER class="fragment">
-                image segmentation
-                </CENTER>
-                <CENTER class="fragment">
-                alternative NN architecture including additional context in a single model
-                </CENTER>
+                <div class="fragment">
+                <ol type="1">
+                <li>deploy probability modelling on GB</li>
+                </ol>
+                </div>
+                <div class="fragment">
+                <ol start="2" type="1">
+                <li>image segmentation</li>
+                </ol>
+                </div>
+                <div class="fragment">
+                <ol start="3" type="1">
+                <li>alternative NN architecture including additional context in a single model</li>
+                </ol>
+                </div>
                 </section>
                 </section>
                 <section id="section-31" class="slide level1">
                 <h1></h1>
                 <section id="conclusions" class="level2">
                 <h2>Conclusions</h2>
-                <CENTER>
-                When geography plays a role, AI needs to understand it.
-                </CENTER>
+                <div class="fragment">
+                <ol type="1">
+                <li>Relationship between signatures and satellite data is <span class="hlg">fuzzy<span></li>
+                </ol>
+                </div>
+                <div class="fragment">
+                <ol start="2" type="1">
+                <li>Chip size needs to <span class="hlg">balance</span> information and relation to input geometry</li>
+                </ol>
+                </div>
+                <div class="fragment">
+                <ol start="3" type="1">
+                <li><span class="hlg">Co-location</span> information needs to be embedded in the model</li>
+                </ol>
+                </div>
                 </section>
                 </section>
                 <section id="section-32" class="slide level1">
