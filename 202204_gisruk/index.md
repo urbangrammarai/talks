@@ -148,11 +148,19 @@ How we arrange "stuff" in cities matters...
 
 ## {data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt.png" data-background-size="cover"}
 
+<span class="pie">16 signature types, 3 groups</span>
+
 ## {data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_countryside.png" data-background-size="cover"}
+
+<span class="pie">Countryside (3 types)</span>
 
 ## {data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_periphery.png" data-background-size="cover"}
 
+<span class="pie">Periphery (4 types)</span>
+
 ## {data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_urban.png" data-background-size="cover"}
+
+<span class="pie">Urban (9 types)</span>
 
 #
 
@@ -222,39 +230,53 @@ train a neural network
 ## Neural network architecture
 
 <CENTER>
-<img src="../fig/gisruk/comp1.pdf"  style="vertical-align:middle;box-shadow:none">
+<img src="../fig/gisruk/comp1.png"  style="vertical-align:middle;box-shadow:none">
 </CENTER>
 
 ## Chip size effect
 
-## {data-transition="none"}
+<!-- ## {data-transition="none"}
 
 <CENTER>
-<img src="../fig/gisruk/chips_160.png"  style="vertical-align:middle;box-shadow:none;width:80%">
+<img src="../fig/gisruk/chips_80.png"  style="vertical-align:middle;box-shadow:none;width:60%">
 </CENTER>
-
-## {data-transition="none"}
-
 <CENTER>
-<img src="../fig/gisruk/chips_320.png"  style="vertical-align:middle;box-shadow:none;width:80%">
-</CENTER>
+13760 chips, which is 74 % of maximum.
+</CENTER> -->
 
-## {data-transition="none"}
+## {data-transition="none" data-background-image="../fig/gisruk/chips_80.png" data-background-size="contain"}
 
-<CENTER>
-<img src="../fig/gisruk/chips_640.png"  style="vertical-align:middle;box-shadow:none;width:80%">
-</CENTER>
+<span class="pie">80x80m: 13760 chips, which is 74 % of maximum</span>
+
+## {data-transition="none" data-background-image="../fig/gisruk/chips_160.png" data-background-size="contain"}
+
+<span class="pie">160x160m: 2718 chips within, which is 57 % of maximum</span>
+
+## {data-transition="none" data-background-image="../fig/gisruk/chips_320.png" data-background-size="contain"}
+
+<span class="pie">320x320m: 423 chips within, which is 35 % of maximum</span>
+
+## {data-transition="none" data-background-image="../fig/gisruk/chips_640.png" data-background-size="contain"}
+
+<span class="pie">640x640m: 38 chips within, which is 13 % of maximum</span>
 
 ##
 
 <CENTER>
-<img src="../fig/gisruk/comp2.pdf"  style="vertical-align:middle;box-shadow:none">
+<img src="../fig/gisruk/comp2.png"  style="vertical-align:middle;box-shadow:none">
 </CENTER>
 
 ## Image classification
 
-<!-- - accuracy and confusion matrix
-- a few maps on NW -->
+## {data-background-image="../fig/gisruk/image_class_conf.png" data-background-size="contain"}
+
+## {data-transition="none" data-background-image="../fig/gisruk/image_class_country.png" data-background-size="contain"}
+
+<span class="pie">Wild countryside</span>
+
+## {data-transition="none" data-background-image="../fig/gisruk/image_class_urban.png" data-background-size="contain"}
+
+<span class="pie">Urbanity</span>
 
 ## Co-location
 
@@ -262,11 +284,25 @@ train a neural network
 
 ## Multi-output regression
 
-<!-- - figure of chips
-- accuracy and confusion matrix
-- a few maps on NW (to be compared to previous) -->
+## {data-transition="none" data-background-image="../fig/gisruk/chips_320_all.png" data-background-size="contain"}
+
+<span class="pie">320x320m, chips capturing the proportion</span>
+
+## {data-background-image="../fig/gisruk/mor_conf.png" data-background-size="contain"}
+
+## {data-transition="none" data-background-image="../fig/gisruk/mor_country.png" data-background-size="contain"}
+
+<span class="pie">Wild countryside</span>
+
+## {data-transition="none" data-background-image="../fig/gisruk/mor_urban.png" data-background-size="contain"}
+
+<span class="pie">Urbanity</span>
 
 ## Probability modelling
+
+## {data-transition="none" data-background-image="../fig/gisruk/prob_exp.png" data-background-size="contain"}
+
+<span class="pie">*the accuracy is based on a different sample than in previous cases (WIP)</span>
 
 <!-- - accuracy and confusion matrix
 - a few maps on NW (to be compared to previous) -->
@@ -275,17 +311,22 @@ train a neural network
 
 ## A way forward
 
-<!-- Slide with all the accuracies and empty cells for:
-    - more co-location
-        - additional methods of understanding the context
-    - segmentation
-    - parallel NN model with additional data inputs -->
-
+<CENTER class="fragment">
+deploy probability modelling on GB
+</CENTER>
+<CENTER class="fragment">
+image segmentation
+</CENTER>
+<CENTER class="fragment">
+alternative NN architecture including additional context in a single model
+</CENTER>
 #
 
 ## Conclusions
 
-<!-- When geography plays a role, AI needs to understand it. -->
+<CENTER>
+When geography plays a role, AI needs to understand it.
+</CENTER>
 
 #
 
