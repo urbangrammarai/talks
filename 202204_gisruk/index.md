@@ -227,6 +227,8 @@ understand the role of geography
 
 ## Exploration
 
+## Image classification
+
 ## Neural network architecture
 
 <CENTER>
@@ -234,15 +236,6 @@ understand the role of geography
 </CENTER>
 
 ## Chip size effect
-
-<!-- ## {data-transition="none"}
-
-<CENTER>
-<img src="../fig/gisruk/chips_80.png"  style="vertical-align:middle;box-shadow:none;width:60%">
-</CENTER>
-<CENTER>
-13760 chips, which is 74 % of maximum.
-</CENTER> -->
 
 ## {data-transition="none" data-background-image="../fig/gisruk/chips_80.png" data-background-size="contain"}
 
@@ -266,9 +259,9 @@ understand the role of geography
 <img src="../fig/gisruk/comp2.png"  style="vertical-align:middle;box-shadow:none">
 </CENTER>
 
-## Image classification
-
 ## {data-background-image="../fig/gisruk/image_class_conf.png" data-background-size="contain"}
+
+<span class="pie">Overall accuracy 42.8%</span>
 
 ## {data-transition="none" data-background-image="../fig/gisruk/image_class_country.png" data-background-size="contain"}
 
@@ -289,6 +282,8 @@ understand the role of geography
 <span class="pie">320x320m, chips capturing the proportion</span>
 
 ## {data-background-image="../fig/gisruk/mor_conf.png" data-background-size="contain"}
+
+<span class="pie">Overall accuracy 43.5%</span>
 
 ## {data-transition="none" data-background-image="../fig/gisruk/mor_country.png" data-background-size="contain"}
 
@@ -312,13 +307,13 @@ understand the role of geography
 ## A way forward
 
 <div class="fragment">
-1. deploy probability modelling on GB
+1. Deploy probability modelling on GB
 </div>
 <div class="fragment">
-2. image segmentation
+2. Image segmentation
 </div>
 <div class="fragment">
-3. alternative NN architecture including additional context in a single model
+3. Alternative NN architecture including additional context in a single model
 </div>
 
 #
