@@ -12,3 +12,4 @@ Archive of public talks for the [Urban Grammar](https://urbangrammarai.github.io
 - [November'21 - Turing 2.0 (Leeds)](202111_ati_leeds/index.html) [`[PDF]`](202111_ati_leeds/index.pdf)
 - [December'21 - Turing/Met Office](202112_mo/index.html) [`[PDF]`](202112_mo/index.pdf)
 - [April'22 - GISRUK](202204_gisruk/index.html) [`[PDF]`](202204_gisruk/index.pdf)
+- [May'22 - University of Chicago](202205_uc/index.html) [`[PDF]`](202205_uc/index.pdf)
