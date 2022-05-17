@@ -311,7 +311,11 @@ understand the role of geography
 <span class="pie">Multi-output regression - Urbanity</span>
 
 
-## Probability modelling as an additional step
+## Probability modelling
+
+<CENTER>
+![](../fig/ai/chip_prob_modeling.png)
+</CENTER>
 
 ## {data-transition="none" data-background-image="../fig/gisruk/prob_exp.png" data-background-size="contain"}
 
@@ -322,33 +326,11 @@ understand the role of geography
 
 #
 
-## A way forward
+## Feedback?
 
-<div class="fragment">
-1. Deploy probability modelling on GB
-</div>
-<div class="fragment">
-2. Image segmentation
-</div>
-<div class="fragment">
-3. Alternative NN architecture including additional context in a single model
-</div>
-
-#
-
-## Conclusions
-
-<div class="fragment">
-1. Relationship between signatures and satellite data is <span class="hlg">indirect<span>
-</div>
-
-<div class="fragment">
-2. Chip size needs to <span class="hlg">balance</span> information and relation to input geometry
-</div>
-
-<div class="fragment">
-3. <span class="hlg">Co-location</span> information needs to be embedded in the model
-</div>
+- Better (spatial) evaluation of model performance
+- Probability modeling: *does it make (any) sense?*
+- Anything else?
 
 #
 
