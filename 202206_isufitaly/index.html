@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Developing an AI-based Urban Grammar</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Urban Grammar AI Team">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../revealjs/dist/reset.css">
+		<link rel="stylesheet" href="../revealjs/dist/reveal.css">
+		<link rel="stylesheet" href="../revealjs/dist/theme/ugai.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+
+	<body>
+
+        <!-- BODY -->
+		<div class="reveal">
+			<div class="slides">
+
+                <section id="section" class="slide level1">
+                <h1></h1>
+                <CENTER>
+                <h4>
+                <em>Detecting urban typology from multispectral satellite imagery using neural networks</em>
+                </h4>
+                </CENTER>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <a href="https://martinfleischmann.net/"><b>Martin Fleischmann</b></a>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <a href="https://darribas.org"><b>Dani Arribas-Bel</b></a>
+                </CENTER>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <CENTER>
+                <a href="https://uk.linkedin.com/in/murraydata"><b>John Murray</b></a>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <a href="https://www.alex-singleton.com/"><b>Alex Singleton</b></a>
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                <table>
+                <col width="33%">
+                <col width="33%">
+                <col width="33%">
+                <tr>
+                <td>
+                <img src="../fig/pr/logo_liv.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_ati.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_gdsl.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="section-1" class="slide level1">
+                <h1></h1>
+                <section id="the-data" class="level2">
+                <h2>The data</h2>
+                <center>
+                A quick overview of data used in the recent publications in Urban Morphology.
+                </center>
+                </section>
+                <section id="section-2" class="level2">
+                <h2></h2>
+                <p><img src="../fig/isuf/fu_et_al_2022.png" style="vertical-align:middle;box-shadow:none"> <span class="pie">Fu et al. (2022)</span></p>
+                </section>
+                <section id="section-3" class="level2">
+                <h2></h2>
+                <p><img src="../fig/isuf/kantarek_et_al_2022.png" style="vertical-align:middle;box-shadow:none"> <span class="pie">Kantarek et al. (2022)</span></p>
+                </section>
+                <section id="section-4" class="level2">
+                <h2></h2>
+                <p><img src="../fig/isuf/guo_and_ding_2021.png" style="vertical-align:middle;box-shadow:none"> <span class="pie">Guo and Ding (2021)</span></p>
+                </section>
+                <section id="section-5" class="level2">
+                <h2></h2>
+                <p><img src="../fig/isuf/li_zhang_2021.png" style="vertical-align:middle;box-shadow:none"> <span class="pie">Li and Zhang (2021)</span></p>
+                </section>
+                </section>
+                <section id="section-6" class="slide level1">
+                <h1></h1>
+                <section id="the-issue" class="level2">
+                <h2>The issue</h2>
+                <ul style="list-style: none">
+                <li class="fragment">
+                availability
+                </li>
+                <li class="fragment">
+                reliability
+                </li>
+                <li class="fragment">
+                processing demands
+                </li>
+                </ul>
+                </section>
+                <section id="the-issue-1" class="level2">
+                <h2>The issue</h2>
+                <center>
+                Urban morphology is bounded by the data availability and the ability to extract morphological information out of it.
+                </center>
+                </section>
+                </section>
+                <section id="section-7" class="slide level1">
+                <h1></h1>
+                <section id="the-solution" class="level2">
+                <h2>The solution (?)</h2>
+                </section>
+                <section id="section-8" class="level2">
+                <h2> 🛰</h2>
+                </section>
+                <section id="section-9" class="level2" data-transition="none" data-background-image="../fig/gisruk/hires.png" data-background-size="cover">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/hires.png" data-background-size="cover"></h2>
+                </section>
+                <section id="sentinel-2" class="level2">
+                <h2>Sentinel 2</h2>
+                <CENTER>
+                <img src="../fig/gisruk/s2.png"  style="vertical-align:middle;box-shadow:none">
+                </CENTER>
+                </section>
+                </section>
+                <section id="section-10" class="slide level1">
+                <h1></h1>
+                <section id="morphology-and-imagery" class="level2">
+                <h2>Morphology and imagery</h2>
+                <ul style="list-style: none">
+                <li class="fragment">
+                supervised methods
+                </li>
+                <li class="fragment">
+                <strong>un</strong>supervised methods
+                </li>
+                </ul>
+                </section>
+                </section>
+                <section id="section-11" class="slide level1">
+                <h1></h1>
+                <section id="predicting-spatial-signatures" class="level2">
+                <h2>Predicting Spatial Signatures</h2>
+                <center>
+                supervised learning
+                </center>
+                </section>
+                <section id="spatial-signatures" class="level2">
+                <h2>Spatial Signatures</h2>
+                </section>
+                <section id="section-12" class="level2" data-transition="none">
+                <h2 data-transition="none"></h2>
+                <CENTER>
+                <em>A characterisation of space based on form and function designed to understand urban environments</em>
+                </CENTER>
+                </section>
+                <section id="section-13" class="level2">
+                <h2></h2>
+                <iframe src="https://urbangrammarai.xyz/great-britain/#" width="1400px" height="600px" style="border: none;">
+                </iframe>
+                </section>
+                <section id="section-14" class="level2" data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt.png" data-background-size="cover">
+                <h2 data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt.png" data-background-size="cover"></h2>
+                </section>
+                <section id="section-15" class="level2" data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_countryside.png" data-background-size="cover">
+                <h2 data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_countryside.png" data-background-size="cover"></h2>
+                </section>
+                <section id="section-16" class="level2" data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_periphery.png" data-background-size="cover">
+                <h2 data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_periphery.png" data-background-size="cover"></h2>
+                </section>
+                <section id="section-17" class="level2" data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_urban.png" data-background-size="cover">
+                <h2 data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_urban.png" data-background-size="cover"></h2>
+                </section>
+                <section id="what-do-we-want-to-do" class="level2">
+                <h2>What do we want to do?</h2>
+                <CENTER class="fragment">
+                train a neural network
+                </CENTER>
+                <CENTER class="fragment">
+                understand the role of geography
+                </CENTER>
+                </section>
+                <section id="chip-size-effect" class="level2">
+                <h2>Chip size effect</h2>
+                </section>
+                <section id="section-18" class="level2" data-transition="none" data-background-image="../fig/gisruk/chips_80.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/chips_80.png" data-background-size="contain"></h2>
+                <p><span class="pie">80x80m: 13760 chips, which is 74 % of maximum</span></p>
+                </section>
+                <section id="section-19" class="level2" data-transition="none" data-background-image="../fig/gisruk/chips_160.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/chips_160.png" data-background-size="contain"></h2>
+                <p><span class="pie">160x160m: 2718 chips within, which is 57 % of maximum</span></p>
+                </section>
+                <section id="section-20" class="level2" data-transition="none" data-background-image="../fig/gisruk/chips_320.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/chips_320.png" data-background-size="contain"></h2>
+                <p><span class="pie">320x320m: 423 chips within, which is 35 % of maximum</span></p>
+                </section>
+                <section id="section-21" class="level2" data-transition="none" data-background-image="../fig/gisruk/chips_640.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/chips_640.png" data-background-size="contain"></h2>
+                <p><span class="pie">640x640m: 38 chips within, which is 13 % of maximum</span></p>
+                </section>
+                <section id="section-22" class="level2" data-transition="none" data-background-image="../fig/gisruk/chips_320_all.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/chips_320_all.png" data-background-size="contain"></h2>
+                <p><span class="pie">320x320m, chips capturing the proportion (100% of maximum)</span></p>
+                </section>
+                <section id="section-23" class="level2" data-background-image="../fig/gisruk/mor_conf.png" data-background-size="contain">
+                <h2 data-background-image="../fig/gisruk/mor_conf.png" data-background-size="contain"></h2>
+                <p><span class="pie">Multi-output regression - Overall accuracy 43.5%</span></p>
+                </section>
+                <section id="section-24" class="level2" data-transition="none" data-background-image="../fig/gisruk/mor_country.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/mor_country.png" data-background-size="contain"></h2>
+                <p><span class="pie">Wild countryside</span></p>
+                </section>
+                <section id="section-25" class="level2" data-transition="none" data-background-image="../fig/gisruk/mor_urban.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/mor_urban.png" data-background-size="contain"></h2>
+                <p><span class="pie">Urbanity</span></p>
+                </section>
+                <section id="still-work-in-progress" class="level2">
+                <h2>Still work in progress</h2>
+                </section>
+                </section>
+                <section id="section-26" class="slide level1">
+                <h1></h1>
+                <section id="estimating-generalized-measures-of-local-neighbourhood-context" class="level2">
+                <h2>Estimating generalized measures of local neighbourhood context</h2>
+                <center>
+                unsupervised learning
+                </center>
+                </section>
+                <section id="section-27" class="level2">
+                <h2></h2>
+                <CENTER>
+                <img src="../fig/isuf/sent2.jpg"  style="vertical-align:middle;box-shadow:none">
+                </CENTER>
+                </section>
+                <section id="section-28" class="level2">
+                <h2></h2>
+                <CENTER>
+                <img src="../fig/isuf/cae.jpg"  style="vertical-align:middle;box-shadow:none">
+                </CENTER>
+                </section>
+                <section id="section-29" class="level2">
+                <h2></h2>
+                <CENTER>
+                <img src="../fig/isuf/clusters.jpg"  style="vertical-align:middle;box-shadow:none">
+                </CENTER>
+                </section>
+                </section>
+                <section id="the-takeaway" class="slide level1">
+                <h1>The takeaway</h1>
+                <ul style="list-style: none">
+                <li class="fragment">
+                We are limited by the data we are used to
+                </li>
+                <li class="fragment">
+                Can satellite imagery and AI resolve it?
+                </li>
+                <li class="fragment">
+                Probably not. Not all of it and not yet.
+                </li>
+                </ul>
+                </section>
+                <section id="section-30" class="slide level1">
+                <h1></h1>
+                <CENTER>
+                <h4>
+                <em>Detecting urban typology from multispectral satellite imagery using neural networks</em>
+                </h4>
+                </CENTER>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <a href="https://martinfleischmann.net/"><b>Martin Fleischmann</b></a>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <a href="https://darribas.org"><b>Dani Arribas-Bel</b></a>
+                </CENTER>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <CENTER>
+                <a href="https://uk.linkedin.com/in/murraydata"><b>John Murray</b></a>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <a href="https://www.alex-singleton.com/"><b>Alex Singleton</b></a>
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                <table>
+                <col width="33%">
+                <col width="33%">
+                <col width="33%">
+                <tr>
+                <td>
+                <img src="../fig/pr/logo_liv.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_ati.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_gdsl.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                </tr>
+                </table>
+                </section>
+
+			</div>
+		</div>
+
+        <!-- DEPENDENCIES -->
+		<script src="../revealjs/dist/reveal.js"></script>
+		<script src="../revealjs/plugin/zoom/zoom.js"></script>
+		<script src="../revealjs/plugin/notes/notes.js"></script>
+		<script src="../revealjs/plugin/search/search.js"></script>
+		<script src="../revealjs/plugin/markdown/markdown.js"></script>
+		<script src="../revealjs/plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				controlsTutorial: false,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
