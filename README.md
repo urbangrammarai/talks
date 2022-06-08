@@ -14,4 +14,4 @@ Archive of public talks for the [Urban Grammar](https://urbangrammarai.github.io
 - [April'22 - GISRUK](202204_gisruk/index.html) [`[PDF]`](202204_gisruk/index.pdf)
 - [May'22 - University of Chicago](202205_uc/index.html) [`[PDF]`](202205_uc/index.pdf)
 - [May'22 - Ordnance Survey](202205_OS/index.html) [`[PDF]`](202205_OS/index.pdf)
-- [June'22 - ISUF Italy](202206_isufitaly/index.html) [`[PDF]`](202206_isufitaly/index.pdf)
+- [June'22 - ISUF Italy](202206_isufitaly/index.html)
