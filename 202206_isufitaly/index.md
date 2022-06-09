@@ -180,17 +180,17 @@ understand the role of geography
 
 <span class="pie">320x320m, chips capturing the proportion (100% of maximum)</span>
 
-## {data-background-image="../fig/gisruk/mor_conf.png" data-background-size="contain"}
+## {data-transition="none" data-background-image="../fig/isuf/mor_all.png" data-background-size="contain"}
 
-<span class="pie">Multi-output regression - Overall accuracy 43.5%</span>
+<span class="pie">Predicted class (320x320m)</span>
 
 ## {data-transition="none" data-background-image="../fig/gisruk/mor_country.png" data-background-size="contain"}
 
-<span class="pie">Wild countryside</span>
+<span class="pie">Wild countryside (320x320m)</span>
 
 ## {data-transition="none" data-background-image="../fig/gisruk/mor_urban.png" data-background-size="contain"}
 
-<span class="pie">Urbanity</span>
+<span class="pie">Urbanity (320x320m)</span>
 
 ## Still work in progress
 
