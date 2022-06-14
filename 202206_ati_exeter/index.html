@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Developing an AI-based Urban Grammar</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Urban Grammar AI Team">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../revealjs/dist/reset.css">
+		<link rel="stylesheet" href="../revealjs/dist/reveal.css">
+		<link rel="stylesheet" href="../revealjs/dist/theme/ugai.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+
+	<body>
+
+        <!-- BODY -->
+		<div class="reveal">
+			<div class="slides">
+
+                <section id="section" class="slide level1">
+                <h1></h1>
+                <CENTER>
+                <h4>
+                <em>Using deep learning to identify (urban) form and function in satellite imagery<br><small>The case of Great Britain</small></em>
+                </h4>
+                </CENTER>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <a href="https://darribas.org"><b>Dani Arribas-Bel</b></a>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <a href="https://martinfleischmann.net/"><b>Martin Fleischmann</b></a>
+                </CENTER>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <CENTER>
+                <SMALL> <a href="https://twitter.com/darribas">[<code>@darribas</code>]</b></a> </SMALL>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <SMALL> <a href="https://twitter.com/martinfleis">[<code>@martinfleis</code>]</b></a> </SMALL>
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                <table>
+                <col width="33%">
+                <col width="33%">
+                <col width="33%">
+                <tr>
+                <td>
+                <img src="../fig/pr/logo_liv.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_ati.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_gdsl.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="section-1" class="slide level1">
+                <h1></h1>
+                <section id="spatial-signatures" class="level2">
+                <h2>Spatial Signatures</h2>
+                </section>
+                <section id="section-2" class="level2" data-transition="none">
+                <h2 data-transition="none"></h2>
+                <CENTER>
+                <em>A characterisation of space based on form and function designed to understand urban environments</em>
+                </CENTER>
+                </section>
+                <section id="section-3" class="level2" data-transition="none">
+                <h2 data-transition="none"></h2>
+                <CENTER>
+                <em>A <span class="hlg">characterisation of space</span> based on form and function designed to understand urban environments</em>
+                </CENTER>
+                </section>
+                <section id="section-4" class="level2" data-transition="none">
+                <h2 data-transition="none"></h2>
+                <CENTER>
+                <em>A characterisation of space based on <span class="hlg">form and function</span> designed to understand urban environments</em>
+                </CENTER>
+                </section>
+                <section id="section-5" class="level2" data-transition="none">
+                <h2 data-transition="none"></h2>
+                <CENTER>
+                <em>A characterisation of space based on form and function designed to understand <span class="hlg">urban environments</span></em>
+                </CENTER>
+                </section>
+                <section id="section-6" class="level2">
+                <h2></h2>
+                <table>
+                <col width="60%">
+                <col width="40%">
+                <tr>
+                <td style="vertical-align:middle;box-shadow:none">
+                <p><u>BRITISH SIGNATURES</u></p>
+                <p><strong>Countryside</strong> (3) <img src="../fig/empirical/colors_countryside.png"  style="height:50px;vertical-align:middle;box-shadow:none"/></p>
+                <p><strong>Periphery</strong> (4) <img src="../fig/empirical/colors_periphery.png"  style="height:50px;vertical-align:middle;box-shadow:none"/></p>
+                <p><strong>Urban</strong> (9)</p>
+                <p><img src="../fig/empirical/colors_urban.png"  style="height:50px;vertical-align:middle;box-shadow:none"/></p>
+                <CENTER>
+                <small> <span style="color:#bc5b4f">urban</span><span style="color:#3b6e8c">grammar</span><span style="color:#efc758">ai</span>.xyz/<span style="color:#8fa37e">story</span>/ </small>
+                </CENTER>
+                </td>
+                <td style="vertical-align:middle;box-shadow:none">
+                <img src="../fig/gb/signatures_gb.png"  style="height:100%;vertical-align:middle;box-shadow:none"/>
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="section-7" class="level2" data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt.png" data-background-size="cover">
+                <h2 data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt.png" data-background-size="cover"></h2>
+                </section>
+                <section id="section-8" class="level2" data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_countryside.png" data-background-size="cover">
+                <h2 data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_countryside.png" data-background-size="cover"></h2>
+                </section>
+                <section id="section-9" class="level2" data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_periphery.png" data-background-size="cover">
+                <h2 data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_periphery.png" data-background-size="cover"></h2>
+                </section>
+                <section id="section-10" class="level2" data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_urban.png" data-background-size="cover">
+                <h2 data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_urban.png" data-background-size="cover"></h2>
+                </section>
+                </section>
+                <section id="section-11" class="slide level1">
+                <h1></h1>
+                <section id="section-12" class="level2">
+                <h2> 🛰</h2>
+                </section>
+                <section id="section-13" class="level2" data-transition="none" data-background-image="../fig/gisruk/hires.png" data-background-size="cover">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/hires.png" data-background-size="cover"></h2>
+                </section>
+                <section id="sentinel-2" class="level2">
+                <h2>Sentinel 2</h2>
+                <CENTER>
+                <img src="../fig/gisruk/s2.png"  style="vertical-align:middle;box-shadow:none">
+                </CENTER>
+                </section>
+                <section id="what-do-we-want-to-do" class="level2">
+                <h2>What do we want to do?</h2>
+                <CENTER class="fragment">
+                train a neural network
+                </CENTER>
+                <CENTER class="fragment">
+                understand the role of geography
+                </CENTER>
+                </section>
+                <section id="chip-size-effect" class="level2">
+                <h2>Chip size effect</h2>
+                </section>
+                <section id="section-14" class="level2" data-transition="none" data-background-image="../fig/gisruk/chips_80.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/chips_80.png" data-background-size="contain"></h2>
+                <p><span class="pie">80x80m: 13760 chips, which is 74 % of maximum</span></p>
+                </section>
+                <section id="section-15" class="level2" data-transition="none" data-background-image="../fig/gisruk/chips_160.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/chips_160.png" data-background-size="contain"></h2>
+                <p><span class="pie">160x160m: 2718 chips within, which is 57 % of maximum</span></p>
+                </section>
+                <section id="section-16" class="level2" data-transition="none" data-background-image="../fig/gisruk/chips_320.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/chips_320.png" data-background-size="contain"></h2>
+                <p><span class="pie">320x320m: 423 chips within, which is 35 % of maximum</span></p>
+                </section>
+                <section id="section-17" class="level2" data-transition="none" data-background-image="../fig/gisruk/chips_640.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/chips_640.png" data-background-size="contain"></h2>
+                <p><span class="pie">640x640m: 38 chips within, which is 13 % of maximum</span></p>
+                </section>
+                <section id="section-18" class="level2" data-transition="none" data-background-image="../fig/gisruk/chips_320_all.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/chips_320_all.png" data-background-size="contain"></h2>
+                <p><span class="pie">320x320m, chips capturing the proportion (100% of maximum)</span></p>
+                </section>
+                <section id="sliding" class="level2">
+                <h2>Sliding</h2>
+                </section>
+                <section id="section-19" class="level2" data-transition="none" data-background-image="../fig/ai/sliding.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/ai/sliding.png" data-background-size="contain"></h2>
+                </section>
+                <section id="probability-modelling" class="level2">
+                <h2>Probability modelling</h2>
+                <CENTER>
+                <img data-src="../fig/ai/chip_prob_modeling.png" />
+                </CENTER>
+                </section>
+                </section>
+                <section id="section-20" class="slide level1">
+                <h1></h1>
+                <section id="preview-of-results" class="level2">
+                <h2>Preview of results</h2>
+                </section>
+                <section id="section-21" class="level2" data-background-image="../fig/gisruk/image_class_conf.png" data-background-size="contain">
+                <h2 data-background-image="../fig/gisruk/image_class_conf.png" data-background-size="contain"></h2>
+                <p><span class="pie">Image classification - Overall accuracy 42.8%</span></p>
+                </section>
+                <section id="section-22" class="level2" data-background-image="../fig/gisruk/mor_conf.png" data-background-size="contain">
+                <h2 data-background-image="../fig/gisruk/mor_conf.png" data-background-size="contain"></h2>
+                <p><span class="pie">Multi-output regression - Overall accuracy 43.5%</span></p>
+                </section>
+                <section id="section-23" class="level2" data-transition="none" data-background-image="../fig/gisruk/image_class_country.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/image_class_country.png" data-background-size="contain"></h2>
+                <p><span class="pie">Image classification - Wild countryside</span></p>
+                </section>
+                <section id="section-24" class="level2" data-transition="none" data-background-image="../fig/gisruk/mor_country.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/mor_country.png" data-background-size="contain"></h2>
+                <p><span class="pie">Multi-output regression - Wild countryside</span></p>
+                </section>
+                <section id="section-25" class="level2" data-transition="none" data-background-image="../fig/gisruk/image_class_urban.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/image_class_urban.png" data-background-size="contain"></h2>
+                <p><span class="pie">Image classification - Urbanity</span></p>
+                </section>
+                <section id="section-26" class="level2" data-transition="none" data-background-image="../fig/gisruk/mor_urban.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/gisruk/mor_urban.png" data-background-size="contain"></h2>
+                <p><span class="pie">Multi-output regression - Urbanity</span></p>
+                </section>
+                <section id="section-27" class="level2" data-transition="none" data-background-image="../fig/isuf/mor_all.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/isuf/mor_all.png" data-background-size="contain"></h2>
+                <p><span class="pie">Multi-output regression - Predicted class (320x320m)</span></p>
+                </section>
+                <section id="section-28" class="level2" data-transition="none" data-background-image="../fig/ai/metrics.png" data-background-size="contain">
+                <h2 data-transition="none" data-background-image="../fig/ai/metrics.png" data-background-size="contain"></h2>
+                <!-- <CENTER>
+                <img src="../fig/ai/metrics.png"  style="vertical-align:middle;box-shadow:none" height="800px"> -->
+                <!-- </CENTER> -->
+                </section>
+                </section>
+                <section id="the-takeaway" class="slide level1">
+                <h1>The takeaway</h1>
+                <ul style="list-style: none">
+                <li class="fragment">
+                Better (spatial) evaluation of model performance
+                </li>
+                <li class="fragment">
+                Probability modeling: <em>does it make (any) sense?</em>
+                </li>
+                <li class="fragment">
+                Anything else?
+                </li>
+                </ul>
+                </section>
+                <section id="section-29" class="slide level1">
+                <h1></h1>
+                <CENTER>
+                <h4>
+                <em>Using deep learning to identify (urban) form and function in satellite imagery<br><small>The case of Great Britain</small></em>
+                </h4>
+                </CENTER>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <a href="https://darribas.org"><b>Dani Arribas-Bel</b></a>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <a href="https://martinfleischmann.net/"><b>Martin Fleischmann</b></a>
+                </CENTER>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <CENTER>
+                <SMALL> <a href="https://twitter.com/darribas">[<code>@darribas</code>]</b></a> </SMALL>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <SMALL> <a href="https://twitter.com/martinfleis">[<code>@martinfleis</code>]</b></a> </SMALL>
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                <table>
+                <col width="33%">
+                <col width="33%">
+                <col width="33%">
+                <tr>
+                <td>
+                <img src="../fig/pr/logo_liv.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_ati.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_gdsl.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                </tr>
+                </table>
+                </section>
+
+			</div>
+		</div>
+
+        <!-- DEPENDENCIES -->
+		<script src="../revealjs/dist/reveal.js"></script>
+		<script src="../revealjs/plugin/zoom/zoom.js"></script>
+		<script src="../revealjs/plugin/notes/notes.js"></script>
+		<script src="../revealjs/plugin/search/search.js"></script>
+		<script src="../revealjs/plugin/markdown/markdown.js"></script>
+		<script src="../revealjs/plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				controlsTutorial: false,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
