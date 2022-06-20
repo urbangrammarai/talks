@@ -16,3 +16,4 @@ Archive of public talks for the [Urban Grammar](https://urbangrammarai.github.io
 - [May'22 - Ordnance Survey](202205_OS/index.html) [`[PDF]`](202205_OS/index.pdf)
 - [June'22 - ISUF Italy](202206_isufitaly/index.html)
 - [June'22 - Turing 2.0 (Exeter)](202206_ati_exeter/index.html)
+- [June'22 - GeoPython Basel](202206_geopython/index.html) [`[PDF]`](202206_geopython/index.pdf)
