@@ -178,7 +178,7 @@ How we arrange "stuff" in cities matters...
     </CENTER>
     </td>
 </tr>
-<tr>
+<tr class='fragment'>
     <td>
     <CENTER>
 <img src="../fig/misc/wb_pancakes.png" style="width:100%;vertical-align:middle">
@@ -302,6 +302,11 @@ How we arrange "stuff" in cities matters...
 ## British Signatures
 
 ## {data-transition="none" data-background-image="../fig/sp_sig/classes.png" data-background-size="contain"}
+
+## {data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt.png" data-background-size="cover"}
+## {data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_countryside.png" data-background-size="cover"}
+## {data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_periphery.png" data-background-size="cover"}
+## {data-transition="none" data-background-image="../fig/empirical/signatures_scottish_belt_urban.png" data-background-size="cover"}
 
 ##
 
@@ -534,28 +539,28 @@ Enclosed tessellation
     <col width="33%">
     <col width="33%">
     <tr>
-<td class='fragment data-fragment-index="0"'>
-<center>**Geography**</center>
+<td class='fragment' data-fragment-index="1"'>
+<center>Geography</center>
 </td>
-<td class='fragment data-fragment-index="1"'>
-<center>**History**</center>
+<td class='fragment' data-fragment-index="2"'>
+<center>History</center>
 </td>
-<td class='fragment data-fragment-index="2"'>
-<center>**Technology**</center>
+<td class='fragment' data-fragment-index="3"'>
+<center>Technology</center>
 </td>
 </tr>
 <tr>
-<td class='fragment fade-in-then-semi-out data-fragment-index="0"'>
+<td class='fragment fade-in-then-semi-out' data-fragment-index="1"'>
     <CENTER>
 <img src="../fig/sp_sig/Medellin_signatures.png" style="width:100%;vertical-align:middle">
     </CENTER>
 </td>
-<td class='fragment fade-in-then-semi-out data-fragment-index="1"'>
+<td class='fragment fade-in-then-semi-out' data-fragment-index="2"'>
     <CENTER>
 <img src="../fig/sp_sig/Barcelona_signatures.png" style="width:100%;vertical-align:middle">
     </CENTER>
 </td>
-<td class='fragment fade-in-then-semi-out data-fragment-index="2"'>
+<td class='fragment fade-in-then-semi-out' data-fragment-index="3"'>
 <img src="../fig/sp_sig/Houston_signatures.png" style="width:100%;vertical-align:middle">
 </td>
 </tr>
@@ -663,11 +668,13 @@ Enclosed tessellation
 
 <span class="pie">Predicted class (320x320m)</span>
 
-##
+## The Future
 
-- *Are we there yet?* Certainly <span class='hlg'>not</span>
-- *Can we even get there?* <span class='hlg'>Maybe</span>
-- *Worth trying?* <span class='hlg'>Absolutely!</span>
+<ul>
+<li class='fragment'> *Are we there yet?* Certainly <span class='hlg'>not</span></li>
+<li class='fragment'> *Can we even get there?* <span class='hlg'>Maybe</span></li>
+<li class='fragment'> *Worth trying?* <span class='hlg'>Absolutely!</span></li>
+</ul>
 
 #
 ## Wrap up
