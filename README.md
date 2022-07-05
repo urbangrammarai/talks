@@ -18,3 +18,4 @@ Archive of public talks for the [Urban Grammar](https://urbangrammarai.github.io
 - [June'22 - Turing 2.0 (Exeter)](202206_ati_exeter/index.html)
 - [June'22 - GeoPython Basel](202206_geopython/index.html) [`[PDF]`](202206_geopython/index.pdf)
 - [June'22 - RSS Merseyside](202206_rss_merseyside/index.html) [`[PDF]`](202206_rss_merseyside/index.pdf)
+- [July'22 - SEA Keynote](202207_sea/index.html) [`[PDF]`](202207_sea/index.pdf)
