@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Developing an AI-based Urban Grammar</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Urban Grammar AI Team">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../revealjs/dist/reset.css">
+		<link rel="stylesheet" href="../revealjs/dist/reveal.css">
+		<link rel="stylesheet" href="../revealjs/dist/theme/ugai.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+
+	<body>
+
+        <!-- BODY -->
+		<div class="reveal">
+			<div class="slides">
+
+                <section id="urban-grammar" class="slide level1">
+                <h1>Urban Grammar</h1>
+                <CENTER>
+                <h4>
+                <em>Making it easy to consider (Urban) Form &amp;
+                Function</em>
+                </h4>
+                </CENTER>
+                <CENTER>
+                <span style="color:#8fa37e"><strong>Economic Data
+                Science seminars - ONS</strong></span>
+                </CENTER>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <a href="https://darribas.org"><b>Dani
+                Arribas-Bel</b></a> <br><code>@darribas</code>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <a href="https://martinfleischmann.net/"><b>Martin
+                Fleischmann</b></a> <br><code>@martinfleis</code>
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                <table>
+                <col width="33%">
+                <col width="33%">
+                <col width="33%">
+                <tr>
+                <td>
+                <img src="../fig/pr/logo_liv.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_ati.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_gdsl.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="section" class="slide level1">
+                <h1></h1>
+                <section id="today" class="level2">
+                <h2>Today</h2>
+                <ul>
+                <li><em>Urban</em> Form &amp; Function</li>
+                <li>Urban Grammar</li>
+                <li>A peek into the future</li>
+                </ul>
+                </section>
+                </section>
+                <section id="section-1" class="slide level1">
+                <h1></h1>
+                <section id="urban-form-function" class="level2">
+                <h2>(Urban) Form &amp; Function</h2>
+                </section>
+                <section id="section-2" class="level2">
+                <h2></h2>
+                <p>How we arrange “stuff” in cities matters…</p>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/nyt_buildings_dc.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/nyt_buildings_mesa.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                <p><span class="pie">Source: <em>A map of every building
+                in America</em> (<a
+                href="https://www.nytimes.com/interactive/2018/10/12/us/map-of-every-building-in-the-united-states.html">New
+                York Times</a>)</span></p>
+                </section>
+                <section id="form-function" class="level2">
+                <h2>Form &amp; Function</h2>
+                <div class="fragment">
+                <p><code>Form</code></p>
+                <CENTER>
+                <em>What does it look like?</em>
+                </CENTER>
+                <CENTER>
+                <span style="color:#3b6e8c"> “Physical structure and
+                appearance of cities” </span>
+                </CENTER>
+                </div>
+                <div class="fragment">
+                <p><code>Function</code></p>
+                <CENTER>
+                <em>What is it used for?</em>
+                </CENTER>
+                <CENTER>
+                <span style="color:#3b6e8c"> “Activities that take place
+                within an environment” </span>
+                </CENTER>
+                </div>
+                </section>
+                <section id="why-form-function" class="level2">
+                <h2><em>Why</em> Form &amp; Function?</h2>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <span class="hlg"><em>Encodes</em></span> the <span
+                style="color:#94666e">past</span>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <span class="hlg"><em>Frames</em></span> the <span
+                style="color:#3b6e8c">future</span>
+                </CENTER>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <div class="fragment fade-in-then-semi-out">
+                <ul>
+                <li>Geography</li>
+                <li>History</li>
+                <li>Technology</li>
+                <li>…</li>
+                </ul>
+                </div>
+                </td>
+                <td>
+                <div class="fragment fade-in-then-semi-out">
+                <ul>
+                <li>Productivity</li>
+                <li>Sustainability</li>
+                <li>Quality of Life</li>
+                <li>…</li>
+                </ul>
+                </div>
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="ff-in-economics-policy" class="level2">
+                <h2>F&amp;F in Economic(s/) policy</h2>
+                <table>
+                <col width="33%" height="50%">
+                <col width="33%" height="50%">
+                <col width="33%" height="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/ch_land_use.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/joue_density.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/cities_in_bad_shape.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                </tr>
+                <tr class="fragment">
+                <td>
+                <CENTER>
+                <img src="../fig/misc/wb_pancakes.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/oecd_rethinking_sprawl.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/un_nua.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="ff-in-economics" class="level2">
+                <h2>F&amp;F in Economics</h2>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <span class="hlg">Critical</span> to understand:
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <span class="hlg">But</span> often:
+                </CENTER>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <div class="fragment fade-in-then-semi-out">
+                <ul>
+                <li>Agglomeration economies</li>
+                <li>Environmental/fiscal sustainability</li>
+                <li>Urban/rural</li>
+                <li>…</li>
+                </ul>
+                </div>
+                </td>
+                <td>
+                <div class="fragment fade-in-then-semi-out">
+                <ul>
+                <li>Coarse</li>
+                <li>Aggregate</li>
+                <li>Ad-hoc</li>
+                <li>…</li>
+                </ul>
+                </div>
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="detail-matters" class="level2">
+                <h2>Detail matters…</h2>
+                <aside class="notes">
+                233 Vs 2,618 buildings reachable within 15min. walk
+                </aside>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/hou_sparse.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/hou_dense.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                <p><span class="pie">Source: <em>Six 15-minute walks
+                capture the diversity, history of Houston
+                neighborhoods</em> (<a
+                href="https://kinder.rice.edu/urbanedge/2019/04/08/maps-six-15-minute-walks-capture-diversity-history-houston-neighborhoods">Urban
+                Edge</a>)</span></p>
+                </section>
+                <section id="section-3" class="level2">
+                <h2></h2>
+                <p><img src="../fig/sp_sig/venn.svg" style="width:100%;vertical-align:middle;box-shadow:none"></p>
+                </section>
+                </section>
+                <section id="section-4" class="slide level1">
+                <h1></h1>
+                <section id="urban-grammar-1" class="level2">
+                <h2>Urban Grammar</h2>
+                </section>
+                <section id="section-5" class="level2"
+                data-background-image="../fig/misc/urban_grammar_project.png"
+                data-background-size="contain">
+                <h2
+                data-background-image="../fig/misc/urban_grammar_project.png"
+                data-background-size="contain"></h2>
+                </section>
+                <section id="section-6" class="level2"
+                data-transition="none">
+                <h2 data-transition="none"></h2>
+                <CENTER>
+                <em>Characterisations of space based on form and
+                function designed to understand urban environments</em>
+                </CENTER>
+                </section>
+                <section id="section-7" class="level2"
+                data-transition="none">
+                <h2 data-transition="none"></h2>
+                <CENTER>
+                <em><span class="hlg">Characterisations of space</span>
+                based on form and function designed to understand urban
+                environments</em>
+                </CENTER>
+                </section>
+                <section id="section-8" class="level2"
+                data-transition="none">
+                <h2 data-transition="none"></h2>
+                <CENTER>
+                <em>Characterisations of space based on <span
+                class="hlg">form and function</span> designed to
+                understand urban environments</em>
+                </CENTER>
+                </section>
+                <section id="section-9" class="level2"
+                data-transition="none">
+                <h2 data-transition="none"></h2>
+                <CENTER>
+                <em>Characterisations of space based on form and
+                function designed to understand <span class="hlg">urban
+                environments</span></em>
+                </CENTER>
+                </section>
+                <section id="british-signatures" class="level2">
+                <h2>British Signatures</h2>
+                </section>
+                <section id="section-10" class="level2"
+                data-transition="none"
+                data-background-image="../fig/sp_sig/classes.png"
+                data-background-size="contain">
+                <h2 data-transition="none"
+                data-background-image="../fig/sp_sig/classes.png"
+                data-background-size="contain"></h2>
+                </section>
+                <section id="section-11" class="level2"
+                data-transition="none"
+                data-background-image="../fig/empirical/signatures_scottish_belt.png"
+                data-background-size="cover">
+                <h2 data-transition="none"
+                data-background-image="../fig/empirical/signatures_scottish_belt.png"
+                data-background-size="cover"></h2>
+                </section>
+                <section id="section-12" class="level2"
+                data-transition="none"
+                data-background-image="../fig/empirical/signatures_scottish_belt_countryside.png"
+                data-background-size="cover">
+                <h2 data-transition="none"
+                data-background-image="../fig/empirical/signatures_scottish_belt_countryside.png"
+                data-background-size="cover"></h2>
+                </section>
+                <section id="section-13" class="level2"
+                data-transition="none"
+                data-background-image="../fig/empirical/signatures_scottish_belt_periphery.png"
+                data-background-size="cover">
+                <h2 data-transition="none"
+                data-background-image="../fig/empirical/signatures_scottish_belt_periphery.png"
+                data-background-size="cover"></h2>
+                </section>
+                <section id="section-14" class="level2"
+                data-transition="none"
+                data-background-image="../fig/empirical/signatures_scottish_belt_urban.png"
+                data-background-size="cover">
+                <h2 data-transition="none"
+                data-background-image="../fig/empirical/signatures_scottish_belt_urban.png"
+                data-background-size="cover"></h2>
+                </section>
+                <section id="section-15" class="level2">
+                <h2></h2>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <img src="../fig/sp_sig/london_web.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/misc/cdrc_data_product.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                <a href='https://urbangrammarai.xyz/great-britain/'><img src="../fig/misc/qr_web_map.gif" style="width:100px;vertical-align:middle;box-shadow:none"></a>
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="sub-classifications" class="level2">
+                <h2>Sub-classifications</h2>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <a href='https://strathprints.strath.ac.uk/80527/1/Fleischmann_Bel_ISUF_2021_Classifying_urban_form_at_national_scale.pdf'><img src="../fig/misc/morphosignatures.png" style="width:100%;vertical-align:middle"></a>
+                </CENTER>
+                <img src="../fig/misc/qr_morphosignatures.gif" style="width:100px;vertical-align:middle;box-shadow:none">
+                <img src="../fig/misc/qr_data_in_brief.gif" style="width:100px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <CENTER>
+                <a href='https://doi.org/10.1016/j.dib.2022.108335'><img src="../fig/misc/data_in_brief.png" style="width:100%;vertical-align:middle"></a>
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="building-spatial-signatures" class="level2"
+                data-transition="none">
+                <h2 data-transition="none">Building <em>Spatial
+                Signatures</em></h2>
+                <CENTER>
+                <SMALL> <span
+                style="color:#94666e"><strong>[STAGE]</strong></span>
+                <span style="color:#3b6e8c">Delimiters</span> <span
+                style="color:#3b6e8c">Enclosure</span> <span
+                style="color:#bc5b4f">Anchors</span> <span
+                style="color:#bc5b4f">Encl. Tess.</span>
+                <span>Characters</span> <span
+                style="color:#bc5b4f">Clu</span>st<span
+                style="color:#3b6e8c">ers</span> <span
+                style="color:#bc5b4f">Sig</span><span
+                style="color:#efc758">nat</span><span
+                style="color:#3b6e8c">ures</span> </SMALL>
+                </CENTER>
+                <table>
+                <col width="33%">
+                <col width="33%">
+                <col width="33%">
+                <tr>
+                <td>
+                <CENTER>
+                Enclosed Tessellation
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                Embedding <em>form</em> &amp; <em>function</em>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                Spatial Signatures
+                </CENTER>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <CENTER>
+                <img src="../fig/sp_sig/et_footprints_no_labels.svg" style="width:125px;height:125px;vertical-align:middle">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/sp_sig/form_function_no_labels.svg" style="width:125px;height:125px;vertical-align:middle">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/sp_sig/signatures_no_labels.svg" style="width:125px;height:125px;vertical-align:middle">
+                </CENTER>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <CENTER>
+                <img src="../fig/sp_sig/enclosures_no_labels.svg" style="width:75px;height:75px;vertical-align:middle">
+                <span> +
+                <img src="../fig/sp_sig/footprints_no_labels.svg" style="width:75px;height:75px;vertical-align:middle">
+                </span>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/sp_sig/clusters_no_labels.svg" style="width:75px;height:75px;vertical-align:middle">
+                </CENTER>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <CENTER>
+                <img src="../fig/sp_sig/barrriers_no_labels.svg" style="width:75px;height:75px;vertical-align:middle">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="meaningful-spatial-units" class="level2">
+                <h2>Meaningful spatial units</h2>
+                <CENTER>
+                Enclosed tessellation
+                </CENTER>
+                <table>
+                <col width="25%" height="50%">
+                <col width="25%" height="50%">
+                <col width="25%" height="50%">
+                <col width="25%" height="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <img src="../fig/sp_sig/et_diagram_1.png" style="width:100%;vertical-align:middle;box-shadow:none">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/sp_sig/et_diagram_2.png" style="width:100%;vertical-align:middle;box-shadow:none">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/sp_sig/et_diagram_3.png" style="width:100%;vertical-align:middle;box-shadow:none">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img src="../fig/sp_sig/et_diagram_4.png" style="width:100%;vertical-align:middle;box-shadow:none">
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="open-by-default" class="level2">
+                <h2><em>“Open by default”</em></h2>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <!--https://www.rawpixel.com/image/573086/antique-cooking-utensils-from-pompeii-->
+                <img src="../fig/misc/kitchen.jpg" style="height:150px;vertical-align:middle;box-shadow:none">
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <!--https://freesvg.org/vector-illustration-of-spotty-sausage-->
+                <img src="../fig/misc/sausage.png" style="height:150px;vertical-align:middle;box-shadow:none">
+                </CENTER>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <ul>
+                <li>Data, data, data</li>
+                <li>Methods, code</li>
+                <li>Infrastructure
+                </td>
+                <td></li>
+                <li>Dissemination</li>
+                <li>Open Data Products</li>
+                <li>Journaling/reporting</li>
+                </ul>
+                </td>
+                </tr>
+                </table>
+                <CENTER>
+                https://<span style="color:#bc5b4f">urban</span><span
+                style="color:#3b6e8c">grammar</span><span
+                style="color:#efc758">ai</span>.xyz
+                </CENTER>
+                </section>
+                <section id="lessons" class="level2">
+                <h2>Lessons</h2>
+                </section>
+                <section id="encoding" class="level2">
+                <h2><em>Encoding</em></h2>
+                <table>
+                <col width="33%">
+                <col width="33%">
+                <col width="33%">
+                <tr>
+                <td class='fragment' data-fragment-index="1"'>
+                <center>Geography</center>
+                </td>
+                <td class='fragment' data-fragment-index="2"'>
+                <center>History</center>
+                </td>
+                <td class='fragment' data-fragment-index="3"'>
+                <center>Technology</center>
+                </td>
+                </tr>
+                <tr>
+                <td class='fragment fade-in-then-semi-out' data-fragment-index="1"'>
+                    <CENTER>
+                <img src="../fig/sp_sig/Medellin_signatures.png" style="width:100%;vertical-align:middle">
+                    </CENTER>
+                </td>
+                <td class='fragment fade-in-then-semi-out' data-fragment-index="2"'>
+                    <CENTER>
+                <img src="../fig/sp_sig/Barcelona_signatures.png" style="width:100%;vertical-align:middle">
+                    </CENTER>
+                </td>
+                <td class='fragment fade-in-then-semi-out' data-fragment-index="3"'>
+                <img src="../fig/sp_sig/Houston_signatures.png" style="width:100%;vertical-align:middle">
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="hierarchy" class="level2">
+                <h2>Hierarchy</h2>
+                <table>
+                <col width="35%">
+                <col width="75%">
+                <tr>
+                <td class="fragment fade-in-then-semi-out">
+                <CENTER>
+                <img src="../fig/empirical/geog_distribution_co_occurence.svg" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                <td class="fragment">
+                <CENTER>
+                <img src="../fig/empirical/hierarchy.png" style="width:100%;vertical-align:middle">
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="framing" class="level2">
+                <h2><em>Framing?</em></h2>
+                </section>
+                </section>
+                <section id="section-16" class="slide level1">
+                <h1></h1>
+                <section id="a-peek-into-the-future" class="level2">
+                <h2>A peek into the future</h2>
+                </section>
+                <section id="section-17" class="level2">
+                <h2></h2>
+                <CENTER>
+                📡 🌎 + 💻 + 🤖
+                </CENTER>
+                </section>
+                <section id="section-18" class="level2">
+                <h2></h2>
+                <table>
+                <col width="33%" height="50%">
+                <col width="33%" height="50%">
+                <col width="33%" height="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <a href='https://landsat.gsfc.nasa.gov/'><img src="../fig/misc/landsat.png" style="width:100%;vertical-align:middle"></a>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <a href='https://sentinels.copernicus.eu/web/sentinel/home'><img src="../fig/misc/sentinel.png" style="width:100%;vertical-align:middle"></a>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <a href='https://www.planet.com/'><img src="../fig/misc/planet.png" style="width:100%;vertical-align:middle"></a>
+                </CENTER>
+                </td>
+                <tr class="fragment">
+                <td>
+                <CENTER>
+                <a href='https://ghsl.jrc.ec.europa.eu/'><img src="../fig/misc/ghsl.png" style="width:100%;vertical-align:middle"></a>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <a href='https://www.dynamicworld.app/'><img src="../fig/misc/google_dw.png" style="width:100%;vertical-align:middle"></a>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <a href='https://livingatlas.arcgis.com/landcover/'><img src="../fig/misc/esri_lc.png" style="width:100%;vertical-align:middle"></a>
+                </CENTER>
+                </td>
+                </tr>
+                </tr>
+                </table>
+                </section>
+                <section id="section-19" class="level2">
+                <h2></h2>
+                <p><em>Two examples on Form &amp; Function…</em></p>
+                </section>
+                <section id="section-20" class="level2"
+                data-background-color="#09101d"
+                data-background-image="../fig/misc/pc_classi_stirling.png"
+                data-background-size="contain">
+                <h2 data-background-color="#09101d"
+                data-background-image="../fig/misc/pc_classi_stirling.png"
+                data-background-size="contain"></h2>
+                <p><a href='https://studio.unfolded.ai/public/c40f0a5b-a1f8-48af-8b7d-7c258942cf0d'><span
+                class="pie"><img src="../fig/misc/qr_pc_classi.gif" style="width:150px;vertical-align:middle;box-shadow:none"></span></a></p>
+                </section>
+                <section id="section-21" class="level2"
+                data-transition="none"
+                data-background-image="../fig/misc/nw_signatures.png"
+                data-background-size="contain">
+                <h2 data-transition="none"
+                data-background-image="../fig/misc/nw_signatures.png"
+                data-background-size="contain"></h2>
+                </section>
+                <section id="section-22" class="level2"
+                data-transition="none"
+                data-background-image="../fig/misc/nw_sentinel.png"
+                data-background-size="contain">
+                <h2 data-transition="none"
+                data-background-image="../fig/misc/nw_sentinel.png"
+                data-background-size="contain"></h2>
+                <p><span class="pie">Source:
+                <a href='https://s2maps.eu/'>Sentinel-2
+                cloudless</a></span></p>
+                </section>
+                <section id="section-23" class="level2"
+                data-transition="none"
+                data-background-image="../fig/gisruk/mor_country.png"
+                data-background-size="contain">
+                <h2 data-transition="none"
+                data-background-image="../fig/gisruk/mor_country.png"
+                data-background-size="contain"></h2>
+                <p><span class="pie">Wild countryside
+                (320x320m)</span></p>
+                </section>
+                <section id="section-24" class="level2"
+                data-transition="none"
+                data-background-image="../fig/gisruk/mor_urban.png"
+                data-background-size="contain">
+                <h2 data-transition="none"
+                data-background-image="../fig/gisruk/mor_urban.png"
+                data-background-size="contain"></h2>
+                <p><span class="pie">Urbanity (320x320m)</span></p>
+                </section>
+                <section id="section-25" class="level2"
+                data-transition="none"
+                data-background-image="../fig/isuf/mor_all.png"
+                data-background-size="contain">
+                <h2 data-transition="none"
+                data-background-image="../fig/isuf/mor_all.png"
+                data-background-size="contain"></h2>
+                <p><span class="pie">Predicted class
+                (320x320m)</span></p>
+                </section>
+                <section id="the-future" class="level2">
+                <h2>The Future</h2>
+                <ul>
+                <li class="fragment">
+                <em>Are we there yet?</em> Certainly <span
+                class="hlg">not</span>
+                </li>
+                <li class="fragment">
+                <em>Can we even get there?</em> <span
+                class="hlg">Maybe</span>
+                </li>
+                <li class="fragment">
+                <em>Worth trying?</em> <span
+                class="hlg">Absolutely!</span>
+                </li>
+                </ul>
+                </section>
+                </section>
+                <section id="section-26" class="slide level1">
+                <h1></h1>
+                <section id="wrap-up" class="level2">
+                <h2>Wrap up</h2>
+                <p>(Urban) <span class="hlg">form &amp;
+                function</span>…</p>
+                <ul>
+                <li>underpin many <span class="hlg">economic</span>
+                processes</li>
+                <li>are becoming easier to <span class="hlg">measure
+                better</span></li>
+                <li>You should <span class="hlg"
+                style="color:#3b6e8c">use them</span> more in your
+                work!</li>
+                </ul>
+                </section>
+                </section>
+                <section id="urban-grammar-2" class="slide level1">
+                <h1>Urban Grammar</h1>
+                <CENTER>
+                <h4>
+                <em>Making it easy to consider (Urban) Form &amp;
+                Function</em>
+                </h4>
+                </CENTER>
+                <CENTER>
+                <span style="color:#8fa37e"><strong>Economic Data
+                Science seminars - ONS</strong></span>
+                </CENTER>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <a href="https://darribas.org"><b>Dani
+                Arribas-Bel</b></a> <br><code>@darribas</code>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <a href="https://martinfleischmann.net/"><b>Martin
+                Fleischmann</b></a> <br><code>@martinfleis</code>
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                <table>
+                <col width="33%">
+                <col width="33%">
+                <col width="33%">
+                <tr>
+                <td>
+                <img src="../fig/pr/logo_liv.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_ati.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_gdsl.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                </tr>
+                </table>
+                </section>
+
+			</div>
+		</div>
+
+        <!-- DEPENDENCIES -->
+		<script src="../revealjs/dist/reveal.js"></script>
+		<script src="../revealjs/plugin/zoom/zoom.js"></script>
+		<script src="../revealjs/plugin/notes/notes.js"></script>
+		<script src="../revealjs/plugin/search/search.js"></script>
+		<script src="../revealjs/plugin/markdown/markdown.js"></script>
+		<script src="../revealjs/plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				controlsTutorial: false,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
