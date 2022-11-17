@@ -19,3 +19,4 @@ Archive of public talks for the [Urban Grammar](https://urbangrammarai.github.io
 - [June'22 - GeoPython Basel](202206_geopython/index.html) [`[PDF]`](202206_geopython/index.pdf)
 - [June'22 - RSS Merseyside](202206_rss_merseyside/index.html) [`[PDF]`](202206_rss_merseyside/index.pdf) [`YouTube`](https://www.youtube.com/watch?v=u3hYWLYApoA&t=3531s)
 - [July'22 - SEA Keynote](202207_sea/index.html) [`[PDF]`](202207_sea/index.pdf)
+- [November'22 - ONS Economic Data Science seminars](202211_ons/index.html) [`[PDF]`](202211_ons/index.pdf)
