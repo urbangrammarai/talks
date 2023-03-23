@@ -21,3 +21,4 @@ Archive of public talks for the [Urban Grammar](https://urbangrammarai.github.io
 - [July'22 - SEA Keynote](202207_sea/index.html) [`[PDF]`](202207_sea/index.pdf)
 - [November'22 - ONS Economic Data Science seminars](202211_ons/index.html) [`[PDF]`](202211_ons/index.pdf)
 - [December'22 - Social Data Science talks (Turing)](202212_sds_turing/index.html) [`[PDF]`](202212_sds_turing/index.pdf)
+- [March'23 - AAG](202303_aag/index.html) [`[PDF]`](202303_aag/index.pdf)
