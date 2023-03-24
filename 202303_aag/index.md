@@ -52,16 +52,13 @@ form and function in open data satellite imagery*
 </table>
 
 #
-## "Previous season..."
-
 ## {data-transition="none" data-background-image="../fig/misc/urban_grammar_project.png" data-background-size="contain"}
+
+## "Previous season..."
 
 ## {data-transition="none" data-background-image="../fig/gb/signatures_summary.png" data-background-size="contain"}
 
-#
-## Experiments setup
-
-##
+## This "season"
 
 <span style='color:#8fa37e'>***What***</span>
 
@@ -77,6 +74,9 @@ from <span class='hlg'>satellite imagery</span>
 - Explore the potential of NNs for cities
 - Work towards more frequent Spatial Signatures
 </div>
+
+#
+## Experiments setup
 
 ## {data-transition="none" data-background-image="../fig/ai/data_sources.png" data-background-size="cover"}
 
@@ -149,29 +149,45 @@ from <span class='hlg'>satellite imagery</span>
 ## Evaluation
 
 <table>
-    <col width="50%">
-    <col width="50%">
+    <col width="35%">
+    <col width="65%">
     <tr>
         <td>
 `Metrics`
 
 - Standard <br> [$\kappa$, accuracy, F1]()
-- Spatial <br> [joint counts]()
+- Spatial <br> [Joint Counts]()
         </td>
 <td class='fragment'>
 `Summarisation`
 <br>
-[$$
-Perf_i = \alpha +
-\sum_m \delta_m M_i +
-\sum_a \gamma_a A_i +
-\beta_1 Chip \; Size_i +
-\beta_2 W_i +
-\epsilon_i
-$$]()
+<img src="../fig/ai/summary_reg_1.png" style="width:500px;vertical-align:middle;box-shadow:none">
+<br>
+<img src="../fig/ai/summary_reg_2.png" style="width:850px;vertical-align:middle;box-shadow:none">
         </td>
     </tr>
 </table>
+
+## Model architecture
+
+<table>
+<col width="30%">
+<col width="70%">
+<tr>
+<td>
+`EfficientNetB4`
+
+- Image Classification
+- Multi-Output Regression
+</td>
+<td class='fragment'>
+<CENTER>
+<img src="../fig/ai/chip_prob_modeling.png" style="width:500px;vertical-align:middle;box-shadow:none">
+</CENTER>
+</td>
+</tr>
+</table>
+
 
 #
 ## Results

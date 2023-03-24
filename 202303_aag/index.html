@@ -79,9 +79,6 @@
                 </section>
                 <section id="section" class="slide level1">
                 <h1></h1>
-                <section id="previous-season" class="level2">
-                <h2>“Previous season…”</h2>
-                </section>
                 <section id="section-1" class="level2"
                 data-transition="none"
                 data-background-image="../fig/misc/urban_grammar_project.png"
@@ -89,6 +86,9 @@
                 <h2 data-transition="none"
                 data-background-image="../fig/misc/urban_grammar_project.png"
                 data-background-size="contain"></h2>
+                </section>
+                <section id="previous-season" class="level2">
+                <h2>“Previous season…”</h2>
                 </section>
                 <section id="section-2" class="level2"
                 data-transition="none"
@@ -98,14 +98,8 @@
                 data-background-image="../fig/gb/signatures_summary.png"
                 data-background-size="contain"></h2>
                 </section>
-                </section>
-                <section id="section-3" class="slide level1">
-                <h1></h1>
-                <section id="experiments-setup" class="level2">
-                <h2>Experiments setup</h2>
-                </section>
-                <section id="section-4" class="level2">
-                <h2></h2>
+                <section id="this-season" class="level2">
+                <h2>This “season”</h2>
                 <p><span
                 style="color:#8fa37e"><strong><em>What</em></strong></span></p>
                 <CENTER>
@@ -124,7 +118,13 @@
                 </ul>
                 </div>
                 </section>
-                <section id="section-5" class="level2"
+                </section>
+                <section id="section-3" class="slide level1">
+                <h1></h1>
+                <section id="experiments-setup" class="level2">
+                <h2>Experiments setup</h2>
+                </section>
+                <section id="section-4" class="level2"
                 data-transition="none"
                 data-background-image="../fig/ai/data_sources.png"
                 data-background-size="cover">
@@ -200,8 +200,8 @@
                 <section id="evaluation" class="level2">
                 <h2>Evaluation</h2>
                 <table>
-                <col width="50%">
-                <col width="50%">
+                <col width="35%">
+                <col width="65%">
                 <tr>
                 <td>
                 <p><code>Metrics</code></p>
@@ -209,40 +209,63 @@
                 <li>Standard <br> <a href=""><span
                 class="math inline"><em>κ</em></span>, accuracy,
                 F1</a></li>
-                <li>Spatial <br> <a href="">joint counts</a>
+                <li>Spatial <br> <a href="">Joint Counts</a>
                 </td>
                 <td class="fragment">
-                <code>Summarisation</code> <br> <a href=""><span
-                class="math display"><em>P</em><em>e</em><em>r</em><em>f</em><sub><em>i</em></sub> = <em>α</em> + ∑<sub><em>m</em></sub><em>δ</em><sub><em>m</em></sub><em>M</em><sub><em>i</em></sub> + ∑<sub><em>a</em></sub><em>γ</em><sub><em>a</em></sub><em>A</em><sub><em>i</em></sub> + <em>β</em><sub>1</sub><em>C</em><em>h</em><em>i</em><em>p</em> <em>S</em><em>i</em><em>z</em><em>e</em><sub><em>i</em></sub> + <em>β</em><sub>2</sub><em>W</em><sub><em>i</em></sub> + <em>ϵ</em><sub><em>i</em></sub></span></a>
+                <code>Summarisation</code> <br>
+                <img src="../fig/ai/summary_reg_1.png" style="width:500px;vertical-align:middle;box-shadow:none">
+                <br>
+                <img src="../fig/ai/summary_reg_2.png" style="width:850px;vertical-align:middle;box-shadow:none">
                 </td>
                 </tr>
                 </table></li>
                 </ul>
                 </section>
+                <section id="model-architecture-1" class="level2">
+                <h2>Model architecture</h2>
+                <table>
+                <col width="30%">
+                <col width="70%">
+                <tr>
+                <td>
+                <p><code>EfficientNetB4</code></p>
+                <ul>
+                <li>Image Classification</li>
+                <li>Multi-Output Regression</li>
+                </ul>
+                </td>
+                <td class="fragment">
+                <CENTER>
+                <img src="../fig/ai/chip_prob_modeling.png" style="width:500px;vertical-align:middle;box-shadow:none">
+                </CENTER>
+                </td>
+                </tr>
+                </table>
                 </section>
-                <section id="section-6" class="slide level1">
+                </section>
+                <section id="section-5" class="slide level1">
                 <h1></h1>
                 <section id="results" class="level2">
                 <h2>Results</h2>
                 </section>
-                <section id="section-7" class="level2"
+                <section id="section-6" class="level2"
                 data-transition="none"
                 data-background-image="../fig/ai/results_table_1.png"
                 data-background-size="contain">
                 <h2 data-transition="none"
                 data-background-image="../fig/ai/results_table_1.png"
+                data-background-size="contain"></h2>
+                </section>
+                <section id="section-7" class="level2"
+                data-transition="none"
+                data-background-image="../fig/ai/results_table_2.png"
+                data-background-size="contain">
+                <h2 data-transition="none"
+                data-background-image="../fig/ai/results_table_2.png"
                 data-background-size="contain"></h2>
                 </section>
                 <section id="section-8" class="level2"
                 data-transition="none"
-                data-background-image="../fig/ai/results_table_2.png"
-                data-background-size="contain">
-                <h2 data-transition="none"
-                data-background-image="../fig/ai/results_table_2.png"
-                data-background-size="contain"></h2>
-                </section>
-                <section id="section-9" class="level2"
-                data-transition="none"
                 data-background-image="../fig/ai/results_table_3.png"
                 data-background-size="contain">
                 <h2 data-transition="none"
@@ -250,7 +273,7 @@
                 data-background-size="contain"></h2>
                 </section>
                 </section>
-                <section id="section-10" class="slide level1">
+                <section id="section-9" class="slide level1">
                 <h1></h1>
                 <section id="conclusions" class="level2">
                 <h2>Conclusions</h2>
