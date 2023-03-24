@@ -11,7 +11,7 @@ form and function in open data satellite imagery*
 </CENTER>
 
 <CENTER>
-<span style='color:#8fa37e'>**#AAG23**</span>
+<span style='color:#8fa37e'>**#AAG2023**</span>
 </CENTER>
 
 <table>
@@ -57,10 +57,6 @@ form and function in open data satellite imagery*
 ## {data-transition="none" data-background-image="../fig/misc/urban_grammar_project.png" data-background-size="contain"}
 
 ## {data-transition="none" data-background-image="../fig/gb/signatures_summary.png" data-background-size="contain"}
-
-## Spatial Signatures
-
-Insert context slide
 
 #
 ## Experiments setup
@@ -204,7 +200,7 @@ form and function in open data satellite imagery*
 </CENTER>
 
 <CENTER>
-<span style='color:#8fa37e'>**#AAG23**</span>
+<span style='color:#8fa37e'>**#AAG2023**</span>
 </CENTER>
 
 <table>
