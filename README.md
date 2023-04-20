@@ -23,3 +23,4 @@ Archive of public talks for the [Urban Grammar](https://urbangrammarai.github.io
 - [December'22 - Social Data Science talks (Turing)](202212_sds_turing/index.html) [`[PDF]`](202212_sds_turing/index.pdf)
 - [March'23 - AAG](202303_aag/index.html) [`[PDF]`](202303_aag/index.pdf)
 - [April'23 - Taiwan](20230412_taiwan/index.html) [`[PDF]`](20230412_taiwan/index.pdf)
+- [April'23 - JRC](20230420_jrc/index.html) [`[PDF]`](20230420_jrc/index.pdf)
