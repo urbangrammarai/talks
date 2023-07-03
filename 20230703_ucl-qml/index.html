@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Developing an AI-based Urban Grammar</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Urban Grammar AI Team">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../revealjs/dist/reset.css">
+		<link rel="stylesheet" href="../revealjs/dist/reveal.css">
+		<link rel="stylesheet" href="../revealjs/dist/theme/ugai.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+
+	<body>
+
+        <!-- BODY -->
+		<div class="reveal">
+			<div class="slides">
+
+                <section id="urban-grammar" class="slide level1">
+                <h1>Urban Grammar</h1>
+                <CENTER>
+                <h4>
+                <em>“Learning from Deep Learning”</em> <br> <SMALL>
+                <em>Lessons from using computer vision to identify
+                (urban) form and function in open data satellite
+                imagery</em> </SMALL>
+                </h4>
+                </CENTER>
+                <CENTER>
+                <span style="color:#8fa37e"><strong>UCL-QML Turing
+                workshop</strong></span>
+                </CENTER>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <a href="https://darribas.org"><b>Dani
+                Arribas-Bel</b></a> <br><code>@darribas</code>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <a href="https://martinfleischmann.net/"><b>Martin
+                Fleischmann</b></a> <br><code>@martinfleis</code>
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                <table>
+                <col width="33%">
+                <col width="33%">
+                <col width="33%">
+                <tr>
+                <td>
+                <img src="../fig/pr/logo_liv.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_ati.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_gdsl.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="section" class="slide level1">
+                <h1></h1>
+                <section id="section-1" class="level2"
+                data-transition="none"
+                data-background-image="../fig/misc/urban_grammar_project.png"
+                data-background-size="contain">
+                <h2 data-transition="none"
+                data-background-image="../fig/misc/urban_grammar_project.png"
+                data-background-size="contain"></h2>
+                </section>
+                <section id="previous-season" class="level2">
+                <h2>“Previous season…”</h2>
+                </section>
+                <section id="section-2" class="level2"
+                data-transition="none"
+                data-background-image="../fig/gb/signatures_summary.png"
+                data-background-size="contain">
+                <h2 data-transition="none"
+                data-background-image="../fig/gb/signatures_summary.png"
+                data-background-size="contain"></h2>
+                </section>
+                <section id="this-season" class="level2">
+                <h2>This “season”</h2>
+                <p><span
+                style="color:#8fa37e"><strong><em>What</em></strong></span></p>
+                <CENTER>
+                Explore the extent to which <span class="hlg">neural
+                networks</span> can recognise <span class="hlg">spatial
+                signatures</span> from <span class="hlg">satellite
+                imagery</span>
+                </CENTER>
+                <div class="fragment">
+                <p><span
+                style="color:#8fa37e"><strong><em>Why</em></strong></span></p>
+                <ul>
+                <li>Learn about Spatial Signatures (scale, context)</li>
+                <li>Explore the potential of NNs for cities</li>
+                <li>Work towards more frequent Spatial Signatures</li>
+                </ul>
+                </div>
+                </section>
+                </section>
+                <section id="section-3" class="slide level1">
+                <h1></h1>
+                <section id="experiments-setup" class="level2">
+                <h2>Experiments setup</h2>
+                </section>
+                <section id="section-4" class="level2"
+                data-transition="none"
+                data-background-image="../fig/ai/data_sources.png"
+                data-background-size="cover">
+                <h2 data-transition="none"
+                data-background-image="../fig/ai/data_sources.png"
+                data-background-size="cover"></h2>
+                </section>
+                <section id="dimensions-to-explore" class="level2">
+                <h2>Dimensions to explore</h2>
+                </section>
+                <section id="chip-size" class="level2">
+                <h2>Chip size</h2>
+                <table>
+                <col width="25%">
+                <col width="25%">
+                <col width="25%">
+                <col width="25%">
+                <tr>
+                <td>
+                <CENTER>
+                <img data-src="../fig/gisruk/chips_80.png" /> <br>
+                <SMALL>[74%]</SMALL>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img data-src="../fig/gisruk/chips_160.png" /> <br>
+                <SMALL>[57%]</SMALL>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img data-src="../fig/gisruk/chips_320.png" /> <br>
+                <SMALL>[35%]</SMALL>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <img data-src="../fig/gisruk/chips_640.png" /> <br>
+                <SMALL>[13%]</SMALL>
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="spatial-data-augmentation" class="level2">
+                <h2>(Spatial) data augmentation</h2>
+                <CENTER>
+                <img data-src="../fig/ai/sliding.png" />
+                </CENTER>
+                </section>
+                <section id="model-architecture" class="level2">
+                <h2>Model architecture</h2>
+                <table>
+                <col width="30%">
+                <col width="70%">
+                <tr>
+                <td>
+                <p><code>EfficientNetB4</code></p>
+                <ul>
+                <li>Image Classification</li>
+                <li>Multi-Output Regression</li>
+                </ul>
+                </td>
+                <td class="fragment">
+                <CENTER>
+                <img src="../fig/ai/chip_prob_modeling.png" style="width:500px;vertical-align:middle;box-shadow:none">
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                </section>
+                <section id="evaluation" class="level2">
+                <h2>Evaluation</h2>
+                <table>
+                <col width="35%">
+                <col width="65%">
+                <tr>
+                <td>
+                <p><code>Metrics</code></p>
+                <ul>
+                <li>Standard <br> <a href=""><span
+                class="math inline"><em>κ</em></span>, accuracy,
+                F1</a></li>
+                <li>Spatial <br> <a href="">Joint Counts</a>
+                </td>
+                <td class="fragment">
+                <code>Summarisation</code> <br>
+                <img src="../fig/ai/summary_reg_1.png" style="width:500px;vertical-align:middle;box-shadow:none">
+                <br>
+                <img src="../fig/ai/summary_reg_2.png" style="width:850px;vertical-align:middle;box-shadow:none">
+                </td>
+                </tr>
+                </table></li>
+                </ul>
+                </section>
+                </section>
+                <section id="section-5" class="slide level1">
+                <h1></h1>
+                <section id="results" class="level2">
+                <h2>Results</h2>
+                </section>
+                <section id="section-6" class="level2"
+                data-transition="none"
+                data-background-image="../fig/ai/results_table_1.png"
+                data-background-size="contain">
+                <h2 data-transition="none"
+                data-background-image="../fig/ai/results_table_1.png"
+                data-background-size="contain"></h2>
+                </section>
+                <section id="section-7" class="level2"
+                data-transition="none"
+                data-background-image="../fig/ai/results_table_2.png"
+                data-background-size="contain">
+                <h2 data-transition="none"
+                data-background-image="../fig/ai/results_table_2.png"
+                data-background-size="contain"></h2>
+                </section>
+                <section id="section-8" class="level2"
+                data-transition="none"
+                data-background-image="../fig/ai/results_table_3.png"
+                data-background-size="contain">
+                <h2 data-transition="none"
+                data-background-image="../fig/ai/results_table_3.png"
+                data-background-size="contain"></h2>
+                </section>
+                <section id="summarisation-summary" class="level2">
+                <h2>Summarisation summary</h2>
+                <ul>
+                <li><span class="hlg">Extra ML</span> pays off</li>
+                <li>M.O.R. worse in general, better <em>within</em>
+                class</li>
+                <li><span class="hlg">Spatial context</span>
+                <em>always</em> improves performance</li>
+                <li><span class="hlg">Scale</span>: larger is better,
+                except for spatial patterning</li>
+                <li><span class="hlg">Spatial sliding</span> rarely
+                (within-class)</li>
+                </ul>
+                </section>
+                </section>
+                <section id="section-9" class="slide level1">
+                <h1></h1>
+                <section id="conclusions" class="level2">
+                <h2>Conclusions</h2>
+                <ul>
+                <li><span class="hlg">Space matters</span> for the
+                spatial signatures</li>
+                <li>There’s value in combining <span class="hlg">NNs
+                &amp; other ML</span></li>
+                <li>A <em>bit</em> closer to <span class="hlg">frequent
+                Spatial Signatures</span></li>
+                </ul>
+                </section>
+                </section>
+                <section id="urban-grammar-1" class="slide level1">
+                <h1>Urban Grammar</h1>
+                <CENTER>
+                <h4>
+                <em>“Learning from Deep Learning”</em> <br> <SMALL>
+                <em>Lessons from using computer vision to identify
+                (urban) form and function in open data satellite
+                imagery</em> </SMALL>
+                </h4>
+                </CENTER>
+                <CENTER>
+                <span style="color:#8fa37e"><strong>UCL-QML Turing
+                workshop</strong></span>
+                </CENTER>
+                <table>
+                <col width="50%">
+                <col width="50%">
+                <tr>
+                <td>
+                <CENTER>
+                <a href="https://darribas.org"><b>Dani
+                Arribas-Bel</b></a> <br><code>@darribas</code>
+                </CENTER>
+                </td>
+                <td>
+                <CENTER>
+                <a href="https://martinfleischmann.net/"><b>Martin
+                Fleischmann</b></a> <br><code>@martinfleis</code>
+                </CENTER>
+                </td>
+                </tr>
+                </table>
+                <table>
+                <col width="33%">
+                <col width="33%">
+                <col width="33%">
+                <tr>
+                <td>
+                <img src="../fig/pr/logo_liv.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_ati.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                <td>
+                <img src="../fig/pr/logo_gdsl.png" style="width:300px;vertical-align:middle;box-shadow:none">
+                </td>
+                </tr>
+                </table>
+                </section>
+
+			</div>
+		</div>
+
+        <!-- DEPENDENCIES -->
+		<script src="../revealjs/dist/reveal.js"></script>
+		<script src="../revealjs/plugin/zoom/zoom.js"></script>
+		<script src="../revealjs/plugin/notes/notes.js"></script>
+		<script src="../revealjs/plugin/search/search.js"></script>
+		<script src="../revealjs/plugin/markdown/markdown.js"></script>
+		<script src="../revealjs/plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				controlsTutorial: false,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
