@@ -26,4 +26,5 @@ Archive of public talks for the [Urban Grammar](https://urbangrammarai.github.io
 - [April'23 - JRC](20230420_jrc/index.html) [`[PDF]`](20230420_jrc/index.pdf)
 - [May'23 - Space Syntax Lab Seminars](20230518_space_syntax/index.html)
 - [June'23 - KRIHS](20230606_krihs/index.html) [`[PDF]`](20230606_krihs/index.pdf)
-- [Juky'24 - UCL/QML](20230703_ucl-qml/index.html) [`[PDF]`](20230703_ucl-qml/index.pdf)
+- [July'23 - UCL/QML](20230703_ucl-qml/index.html) [`[PDF]`](20230703_ucl-qml/index.pdf)
+- [September'23 - ZGZ](20230921_zgz/index.html)
