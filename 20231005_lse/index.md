@@ -79,58 +79,101 @@
 </aside>
 
 #
-## (Urban) Form & Function
+## (Urban) <br> Form & Function
 
-## *What*
+## F&F: *What*
 
-## *Why*
+<div class='fragment'>
+`Form`
 
-## *How*
+<CENTER>
+*What does it look like?*
+</CENTER>
 
-- LULC
-- Geodem
-- ?
-- Pitch
+<CENTER>
+<span style='color:#3b6e8c'>
+"Physical structure and appearance of cities"
+</span>
+</CENTER>
+</div>
 
-##
+<div class='fragment'>
+`Function`
 
-<!-- https://www.unccd.int/news-stories/stories/world-cities-day-2020-better-city-better-life -->
+<CENTER>
+*What is it used for?*
+</CENTER>
+
+<CENTER>
+<span style='color:#3b6e8c'>
+"Activities that take place within an environment"
+</span>
+</CENTER>
+</div>
+
+## F&F: *Why*
+
 <table>
-<col width="33%" height="50%">
-<col width="33%" height="50%">
-<tr>
-    <td class='fragment fade-in-then-semi-out'>
-**Climate**
-
-- 3% land
-- +60% energy
-- 75% CO2
-
-<small>[Source: UN](https://www.unccd.int/news-stories/stories/world-cities-day-2020-better-city-better-life)</small>
-    </td>
-    <td class='fragment fade-in-then-semi-out'>
-**Development**
-
-Urban Economics
-    </td>
-    <td class='fragment fade-in-then-semi-out'>
-**Migration**
-
-- Global hubs
-- Pull
-- Modulate
-    </td>
-<tr>
-    <td>
+    <col width="50%">
+    <col width="50%">
+    <tr>
+        <td>
+            <CENTER>
+                <span class='hlg'>*Encodes*</span> the <span style='color:#94666e'>past</span>
+            </CENTER>
+        </td>
+        <td>
+            <CENTER>
+                <span class='hlg'>*Frames*</span> the <span style='color:#3b6e8c'>future</span>
+            </CENTER>
+        </td>
+    </tr>
+    <tr>
+<td>
+<div class='fragment fade-in-then-semi-out'>
+- Geography
+- History
+- Technology
+- ...
+</div>
+</td>
+<td>
+<div class='fragment fade-in-then-semi-out'>
+- Productivity
+- Sustainability
+- Quality of Life
+- ...
+</div>
+</td>
+</tr>
 </table>
 
-## Cities and ...
+## F&F: *Why*
 
 <table>
 <col width="33%" height="50%">
 <col width="33%" height="50%">
 <col width="33%" height="50%">
 <tr>
+    <td>
+    <CENTER>
+<img src="../fig/misc/ch_land_use.png" style="width:100%;vertical-align:middle">
+    </CENTER>
+    </td>
+
+    <td>
+    <CENTER>
+<img src="../fig/misc/joue_density.png" style="width:100%;vertical-align:middle">
+    </CENTER>
+    </td>
+
+    <td>
+    <CENTER>
+<img src="../fig/misc/cities_in_bad_shape.png" style="width:100%;vertical-align:middle">
+    </CENTER>
+    </td>
+</tr>
+<tr class='fragment'>
     <td>
     <CENTER>
 <img src="../fig/misc/wb_pancakes.png" style="width:100%;vertical-align:middle">
@@ -151,22 +194,7 @@ Urban Economics
 </tr>
 </table>
 
-
-## Why satellite data?
-
-- Low (marginal) cost
-- Near real-time
-- Ripe for disruption
-
-i.e., this is our "20-year-big-thing"...
-
-## But...
-
-- Unstructured
-- Big
-- Only measure what can be "seen"
-
-## Why satellite data?
+## F&F: *How*
 
 <table>
 <col width="33%" height="50%">
@@ -175,42 +203,32 @@ i.e., this is our "20-year-big-thing"...
 <tr>
     <td>
     <CENTER>
-<a href='https://landsat.gsfc.nasa.gov/'><img src="../fig/misc/landsat.png" style="width:100%;vertical-align:middle"></a>
+    ![](../fig/misc/esa_world_cover.png)
     </CENTER>
     </td>
-
     <td>
     <CENTER>
-<a href='https://sentinels.copernicus.eu/web/sentinel/home'><img src="../fig/misc/sentinel.png" style="width:100%;vertical-align:middle"></a>
+    ![](../fig/misc/urban_atlas.png)
     </CENTER>
     </td>
-
     <td>
     <CENTER>
-<a href='https://www.planet.com/'><img src="../fig/misc/planet.png" style="width:100%;vertical-align:middle"></a>
+    ![](https://www.bruna.nl/images/active/carrousel/fullsize/9781526402349_front.jpg)
     </CENTER>
     </td>
-<tr class='fragment'>
+<tr>
     <td>
-    <CENTER>
-<a href='https://ghsl.jrc.ec.europa.eu/'><img src="../fig/misc/ghsl.png" style="width:100%;vertical-align:middle"></a>
-    </CENTER>
-    </td>
-
-    <td>
-    <CENTER>
-<a href='https://www.dynamicworld.app/'><img src="../fig/misc/google_dw.png" style="width:100%;vertical-align:middle"></a>
-    </CENTER>
-    </td>
-
-    <td>
-    <CENTER>
-<a href='https://livingatlas.arcgis.com/landcover/'><img src="../fig/misc/esri_lc.png" style="width:100%;vertical-align:middle"></a>
-    </CENTER>
-    </td>
-</tr>
-</tr>
 </table>
+
+<aside class='notes'>
+- It's a continuum from traditional (natural) land cover to (social) geodem
+- The centre is a sparse area with some urban land use (e.g., Urban Atlas)
+- Single-use, not morphology
+</aside>
+
+## 
+
+<img src="../fig/sp_sig/venn.svg" style="width:100%;vertical-align:middle;box-shadow:none">
 
 #
 ## {data-background-image="../fig/misc/urban_grammar_project.png" data-background-size="contain"}
@@ -272,6 +290,107 @@ i.e., this is our "20-year-big-thing"...
     </td>
 </tr>
 </table>
+
+## Building *Spatial Signatures* {data-transition="none"}
+
+<CENTER>
+<SMALL>
+<span style="color:#94666e">**[STAGE]**</span>
+<span style="color:#3b6e8c">Delimiters</span>
+<span style="color:#3b6e8c">Enclosure</span>
+<span style="color:#bc5b4f">Anchors</span>
+<span style="color:#bc5b4f">Encl. Tess.</span>
+<span>Characters</span>
+<span style="color:#bc5b4f">Clu</span>st<span style="color:#3b6e8c">ers</span>
+<span style="color:#bc5b4f">Sig</span><span style="color:#efc758">nat</span><span style="color:#3b6e8c">ures</span>
+</SMALL>
+</CENTER>
+
+<table>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+<tr>
+    <td>
+    <CENTER>
+    Enclosed Tessellation
+    </CENTER>
+    </td>
+    <td>
+    <CENTER>
+    Embedding *form* & *function*
+    </CENTER>
+    </td>
+    <td>
+    <CENTER>
+    Spatial Signatures
+    </CENTER>
+    </td>
+</tr>
+
+<tr>
+    <td>
+    <CENTER>
+<img src="../fig/sp_sig/et_footprints_no_labels.svg" style="width:125px;height:125px;vertical-align:middle">
+    </CENTER>
+    </td>
+
+    <td>
+    <CENTER>
+<img src="../fig/sp_sig/form_function_no_labels.svg" style="width:125px;height:125px;vertical-align:middle">
+    </CENTER>
+    </td>
+
+    <td>
+    <CENTER>
+<img src="../fig/sp_sig/signatures_no_labels.svg" style="width:125px;height:125px;vertical-align:middle">
+    </CENTER>
+    </td>
+</tr>
+
+<tr>
+    <td>
+    <CENTER>
+<img src="../fig/sp_sig/enclosures_no_labels.svg" style="width:75px;height:75px;vertical-align:middle">
+<span>
+    +
+<img src="../fig/sp_sig/footprints_no_labels.svg" style="width:75px;height:75px;vertical-align:middle">
+</span>
+    </CENTER>
+    </td>
+
+    <td>
+    <CENTER>
+    </CENTER>
+    </td>
+
+    <td>
+    <CENTER>
+<img src="../fig/sp_sig/clusters_no_labels.svg" style="width:75px;height:75px;vertical-align:middle">
+    </CENTER>
+    </td>
+</tr>
+
+<tr>
+    <td>
+    <CENTER>
+<img src="../fig/sp_sig/barrriers_no_labels.svg" style="width:75px;height:75px;vertical-align:middle">
+    </CENTER>
+    </td>
+
+    <td>
+    <CENTER>
+    </CENTER>
+    </td>
+
+    <td>
+    <CENTER>
+    </CENTER>
+    </td>
+</tr>
+
+</table>
+
 
 
 #
@@ -489,107 +608,6 @@ i.e., this is our "20-year-big-thing"...
 #
 ## Appendix
 
-## Building *Spatial Signatures* {data-transition="none"}
-
-<CENTER>
-<SMALL>
-<span style="color:#94666e">**[STAGE]**</span>
-<span style="color:#3b6e8c">Delimiters</span>
-<span style="color:#3b6e8c">Enclosure</span>
-<span style="color:#bc5b4f">Anchors</span>
-<span style="color:#bc5b4f">Encl. Tess.</span>
-<span>Characters</span>
-<span style="color:#bc5b4f">Clu</span>st<span style="color:#3b6e8c">ers</span>
-<span style="color:#bc5b4f">Sig</span><span style="color:#efc758">nat</span><span style="color:#3b6e8c">ures</span>
-</SMALL>
-</CENTER>
-
-<table>
-<col width="33%">
-<col width="33%">
-<col width="33%">
-<tr>
-    <td>
-    <CENTER>
-    Enclosed Tessellation
-    </CENTER>
-    </td>
-    <td>
-    <CENTER>
-    Embedding *form* & *function*
-    </CENTER>
-    </td>
-    <td>
-    <CENTER>
-    Spatial Signatures
-    </CENTER>
-    </td>
-</tr>
-
-<tr>
-    <td>
-    <CENTER>
-<img src="../fig/sp_sig/et_footprints_no_labels.svg" style="width:125px;height:125px;vertical-align:middle">
-    </CENTER>
-    </td>
-
-    <td>
-    <CENTER>
-<img src="../fig/sp_sig/form_function_no_labels.svg" style="width:125px;height:125px;vertical-align:middle">
-    </CENTER>
-    </td>
-
-    <td>
-    <CENTER>
-<img src="../fig/sp_sig/signatures_no_labels.svg" style="width:125px;height:125px;vertical-align:middle">
-    </CENTER>
-    </td>
-</tr>
-
-<tr>
-    <td>
-    <CENTER>
-<img src="../fig/sp_sig/enclosures_no_labels.svg" style="width:75px;height:75px;vertical-align:middle">
-<span>
-    +
-<img src="../fig/sp_sig/footprints_no_labels.svg" style="width:75px;height:75px;vertical-align:middle">
-</span>
-    </CENTER>
-    </td>
-
-    <td>
-    <CENTER>
-    </CENTER>
-    </td>
-
-    <td>
-    <CENTER>
-<img src="../fig/sp_sig/clusters_no_labels.svg" style="width:75px;height:75px;vertical-align:middle">
-    </CENTER>
-    </td>
-</tr>
-
-<tr>
-    <td>
-    <CENTER>
-<img src="../fig/sp_sig/barrriers_no_labels.svg" style="width:75px;height:75px;vertical-align:middle">
-    </CENTER>
-    </td>
-
-    <td>
-    <CENTER>
-    </CENTER>
-    </td>
-
-    <td>
-    <CENTER>
-    </CENTER>
-    </td>
-</tr>
-
-</table>
-
-
 ## Meaningful spatial units
 <CENTER>
 Enclosed tessellation
@@ -669,4 +687,51 @@ Enclosed tessellation
 </table>
 
 
+<!-- ############################################################################### -->
+
+## Why satellite data?
+
+<table>
+<col width="33%" height="50%">
+<col width="33%" height="50%">
+<col width="33%" height="50%">
+<tr>
+    <td>
+    <CENTER>
+<a href='https://landsat.gsfc.nasa.gov/'><img src="../fig/misc/landsat.png" style="width:100%;vertical-align:middle"></a>
+    </CENTER>
+    </td>
+
+    <td>
+    <CENTER>
+<a href='https://sentinels.copernicus.eu/web/sentinel/home'><img src="../fig/misc/sentinel.png" style="width:100%;vertical-align:middle"></a>
+    </CENTER>
+    </td>
+
+    <td>
+    <CENTER>
+<a href='https://www.planet.com/'><img src="../fig/misc/planet.png" style="width:100%;vertical-align:middle"></a>
+    </CENTER>
+    </td>
+<tr class='fragment'>
+    <td>
+    <CENTER>
+<a href='https://ghsl.jrc.ec.europa.eu/'><img src="../fig/misc/ghsl.png" style="width:100%;vertical-align:middle"></a>
+    </CENTER>
+    </td>
+
+    <td>
+    <CENTER>
+<a href='https://www.dynamicworld.app/'><img src="../fig/misc/google_dw.png" style="width:100%;vertical-align:middle"></a>
+    </CENTER>
+    </td>
+
+    <td>
+    <CENTER>
+<a href='https://livingatlas.arcgis.com/landcover/'><img src="../fig/misc/esri_lc.png" style="width:100%;vertical-align:middle"></a>
+    </CENTER>
+    </td>
+</tr>
+</tr>
+</table>
 
