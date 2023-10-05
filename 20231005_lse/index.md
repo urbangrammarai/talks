@@ -119,12 +119,12 @@
     <tr>
         <td>
             <CENTER>
-                <span class='hlg'>*Encodes*</span> the <span style='color:#94666e'>past</span>
+                <span class='hlg'>*Encode*</span> the <span style='color:#94666e'>past</span>
             </CENTER>
         </td>
         <td>
             <CENTER>
-                <span class='hlg'>*Frames*</span> the <span style='color:#3b6e8c'>future</span>
+                <span class='hlg'>*Frame*</span> the <span style='color:#3b6e8c'>future</span>
             </CENTER>
         </td>
     </tr>
@@ -767,25 +767,6 @@ Enclosed tessellation
         <td>
             <CENTER>
                  <img src="../fig/sp_sig/et_diagram_4.png" style="width:100%;vertical-align:middle;box-shadow:none">
-            </CENTER>
-        </td>
-    </tr>
-</table>
-
-## Hierarchy
-
-<table>
-    <col width="35%">
-    <col width="75%">
-    <tr>
-        <td class='fragment fade-in-then-semi-out'>
-            <CENTER>
-<img src="../fig/empirical/geog_distribution_co_occurence.svg" style="width:100%;vertical-align:middle">
-            </CENTER>
-        </td>
-        <td class='fragment'>
-            <CENTER>
-<img src="../fig/empirical/hierarchy.png" style="width:100%;vertical-align:middle">
             </CENTER>
         </td>
     </tr>
