@@ -490,6 +490,12 @@
 </tr>
 </table>
 
+## Context
+
+<CENTER>
+<img src="../fig/sp_sig/tessellation_bcn_context.png" style="width:50%;vertical-align:middle;box-shadow:none">
+</CENTER>
+
 ##
 
 <table>
@@ -549,22 +555,51 @@
 </tr>
 </table>
 
-## Concentration
+## Coverage
 
 ## 94% (50%) {data-transition="none" data-background-image="../fig/empirical/cov_countryside.png" data-background-size="contain"}
 ## 5% (40%) {data-transition="none" data-background-image="../fig/empirical/cov_periphery.png" data-background-size="contain"}
 ## 1% (10%) {data-transition="none" data-background-image="../fig/empirical/cov_centres.png" data-background-size="contain"}
 
-## Co-Location
+## Signature Hierarchy
 ## {data-transition="none" data-background-image="../fig/empirical/geog_distribution_co_occurence.png" data-background-size="contain"}
 
-## Hierarchy
+## Urban Hierarchy
 ##
-Unpack (progressively):
-- Signature dish
-- Hiearchy notion
+
+<table>
+<col width="45%">
+<col width="45%">
+<col width="10%">
+<tr>
+    <td>
+    <CENTER>
+<img src="../fig/empirical/signatures_london_centres.png" style="width:100%;vertical-align:middle">
+    </CENTER>
+    </td>
+    <td class='fragment' data-fragment-index="1">
+    <CENTER>
+<img src="../fig/empirical/hierarchy_london_disk.svg" style="width:100%;vertical-align:middle">
+    </CENTER>
+    </td>
+    <td class='fragment' data-fragment-index="1">
+<span class='fragment' data-fragment-index="2">*Signature*</span> Dish
+    </td>
+</tr>
+</table>
 
 ## {data-transition="none" data-background-image="../fig/empirical/hierarchy.png" data-background-size="contain"}
+
+## {data-transition="none" data-background-image="../fig/empirical/hierarchy_fua.png" data-background-size="contain"}
+<span class='pie'>Signature importance in each OECD's Functional Urban Areas</span>
+
+<aside class='notes'>
+This shows, of the total in each FUA, the proportion a signature is taking
+
+We prefer this because it is not (as) tied to city size. One could think of a
+very urban small town with a very urban top class of small size but that takes
+up most of the town. And we'd want to place that high up in the hierarchy.
+</aside>
 
 #
 ## A peak into the future
@@ -790,3 +825,5 @@ Enclosed tessellation
 <img src="../fig/empirical/feature_imp_10.png" style="height:100%;vertical-align:middle;box-shadow:none">
 </CENTER>
 
+## {data-transition="none" data-background-image="../fig/empirical/hierarchy_ttwa.png" data-background-size="contain"}
+<span class='pie'>Signature proportion within ONS Travel to Work Areas</span>
