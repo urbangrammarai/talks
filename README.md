@@ -29,4 +29,5 @@ Archive of public talks for the [Urban Grammar](https://urbangrammarai.github.io
 - [July'23 - UCL/QML](20230703_ucl-qml/index.html) [`[PDF]`](20230703_ucl-qml/index.pdf)
 - [September'23 - ZGZ](20230921_zgz/index.html)
 - [October'23 - LSE](20231005_lse/index.html)
+- [November'23 - IOER Forum](20231128_ioer/index.html)
 
